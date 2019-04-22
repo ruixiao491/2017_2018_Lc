@@ -1,4 +1,3 @@
-export PATH=$HOME/.local/bin:/afs/cern.ch/cms/lumi/brilconda-1.1.7/bin:$PATH
+export PATH=$HOME/.local/bin:/cvmfs/cms-bril.cern.ch/brilconda/bin:$PATH
+pip uninstall brilws
 pip install --install-option="--prefix=$HOME/.local" brilws
-brilws==0.1.0
-pip show brilws
