@@ -1,0 +1,22 @@
+export output_dir=/scratch/halstead/x/xiao147/BDT_test/MVAfiles/masstuples/pp/5_6_train_separately
+export input_dir=/scratch/halstead/x/xiao147/BDT_test/MVAfiles/merged_files/merged_5_6_train
+
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB1_whole.root $output_dir/masstuples_MB1.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB2_whole.root $output_dir/masstuples_MB2.root&
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB3_whole.root $output_dir/masstuples_MB3.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB4_whole.root $output_dir/masstuples_MB4.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB5_whole.root $output_dir/masstuples_MB5.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB6_whole.root $output_dir/masstuples_MB6.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB7_whole.root $output_dir/masstuples_MB7.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB8_whole.root $output_dir/masstuples_MB8.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB9_Whole.root $output_dir/masstuples_MB9.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB11_whole.root $output_dir/masstuples_MB11.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB12_whole.root $output_dir/masstuples_MB12.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB13_whole.root $output_dir/masstuples_MB13.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB14_whole.root $output_dir/masstuples_MB14.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB15_whole.root $output_dir/masstuples_MB15.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB16_whole.root $output_dir/masstuples_MB16.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB17_whole.root $output_dir/masstuples_MB17.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB18_whole.root $output_dir/masstuples_MB18.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB19_whole.root $output_dir/masstuples_MB19.root& 
+run.sh make_tuple_for_Roofit_alldata_pp_agreedMC_noalpha_uniform_cutsgetfromKevin.C $input_dir/merged_MB20_whole.root $output_dir/masstuples_MB20.root& 

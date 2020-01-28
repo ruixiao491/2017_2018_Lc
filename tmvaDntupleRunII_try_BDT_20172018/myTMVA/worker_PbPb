@@ -1,0 +1,15 @@
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 BDT 10 "0,1,2,3,4,5,6,7,8,9" 0to9_allvariables & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 BDT 3 "0,1,2" 0_1_2 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 BDT 4 "0,1,2,3" 0_1_2_3 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 BDT 4 "0,1,2,4" 0_1_2_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 BDT 4 "0,1,2,5" 0_1_2_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 BDT 5 "0,1,2,3,4" 0_1_2_3_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 BDT 5 "0,1,2,3,5" 0_1_2_3_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 BDT 5 "0,1,2,4,5" 0_1_2_4_5 & 
+run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 BDT 6 "0,1,2,3,4,5" 0_1_2_3_4_5_log_cut20 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 BDT 5 "1,2,3,4,5" 1_2_3_4_5 &
+
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C PbPb 8 20 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5 &
+
+
+

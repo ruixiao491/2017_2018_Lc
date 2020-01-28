@@ -1,0 +1,21 @@
+export input_dir=/scratch/halstead/x/xiao147/BDT_test/skimtree_formva/pp
+
+run_BDT.sh BDT_foreach_file.C $input_dir/MB1_skim_MB1_whole.root 1&
+run_BDT.sh BDT_foreach_file.C $input_dir/MB2_skim_MB2_whole.root 2&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB3_skim_MB3_whole.root 3&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB4_skim_MB4_whole.root 4&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB5_skim_MB5_whole.root 5&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB6_skim_MB6_whole.root 6&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB7_skim_MB7_whole.root 7&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB8_skim_MB8_whole.root 8&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB9_skim_MB9_whole.root 9&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB11_skim_MB11_whole.root 11&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB12_skim_MB12_whole.root 12&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB13_skim_MB13_whole.root 13&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB14_skim_MB14_whole.root 14&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB15_skim_MB15_whole.root 15&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB16_skim_MB16_whole.root 16&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB17_skim_MB17_whole.root 17&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB18_skim_MB18_whole.root 18&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB19_skim_MB19_whole.root 19&
+run_BDT.sh BDT_foreach_file.C $input_dir/pp_MB20_skim_MB20_whole.root 20&
