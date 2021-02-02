@@ -5,7 +5,7 @@ convertPythiaCodes = cms.untracked.bool(False) together with the 2014 evtgen dec
 pdl files. Because there is some modification in code from pythia6 to pythia8  while using PHSP
 decay model. That is why it seems in 2010 decay table the generation is stuck in a event forever.
 
- You can include following lines in the gen-fragment
+The following lines are needed to include in the gen-fragment file
 
     decay_table = cms.string('GeneratorInterface/EvtGenInterface/data/DECAY_2014_NOLONGLIFE.DEC'),
     operates_on_particles = cms.vint32(),
