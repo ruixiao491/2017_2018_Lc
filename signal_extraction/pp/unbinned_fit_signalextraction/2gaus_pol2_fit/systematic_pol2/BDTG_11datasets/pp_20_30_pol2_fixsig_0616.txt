@@ -1,0 +1,515 @@
+nohup: ignoring input
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.10/09                http://root.cern.ch |
+  |                               (c) 1995-2017, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag , 16 October 2017                                 |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+WARNING: AutoLibraryloader::enable() and AutoLibraryLoader.h are deprecated.
+Use FWLiteEnabler::enable() and FWLiteEnabler.h instead
+
+Processing unbinned_fit_test_modified_PbPb_trytomanytimes_20_30_pol2.C...
+Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
+[#1] INFO:Eval -- RooAbsReal::attachToTree(mass) TTree Float_t branch mass will be converted to double precision
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(ds) Ignored 2557 out of range events
+RooDataSet::ds[mass] = 19691 entries
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c1
+begin fitting
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'fit' created with bounds [2.108,2.444]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'NormalizationRangeForfit' created with bounds [2.1,2.444]
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'fit_nll_model_ds' created with bounds [2.108,2.444]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 NumBkg       1.96910e+04  1.96910e+05   -9.84550e+05  9.84550e+05
+     2 NumSig       2.00000e+02  2.00000e+03   -1.00000e+04  1.00000e+04
+     3 float_width   1.57415e-01  1.57415e-02     no limits
+ **********
+ **    3 **FIX           3
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     4 mean         2.29020e+00  1.50000e-02    2.21000e+00  2.36000e+00
+     5 p1           0.00000e+00  2.00000e-01   -1.00000e+00  1.00000e+00
+     6 p2           0.00000e+00  2.00000e-01   -1.00000e+00  1.00000e+00
+     7 ratio        7.53353e-01  7.53353e-02     no limits
+ **********
+ **    4 **FIX           7
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     8 width1       6.37924e-03  6.37924e-04     no limits
+ **********
+ **    5 **FIX           8
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     9 width2       1.32121e-02  1.32121e-03     no limits
+ **********
+ **    6 **FIX           9
+ **********
+ **********
+ **    7 **SET ERR         0.5
+ **********
+ **********
+ **    8 **SET PRINT           1
+ **********
+ **********
+ **    9 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   10 **MIGRAD        4500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -22033.8
+ FCN=-192296 FROM MIGRAD    STATUS=INITIATE       24 CALLS          25 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       1.96910e+04   1.96910e+05   2.01400e-01   6.62577e+03
+   2  NumSig       2.00000e+02   2.00000e+03   2.01400e-01  -4.68953e+02
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.29020e+00   1.50000e-02   2.01871e-01   2.20279e+01
+   5  p1           0.00000e+00   2.00000e-01   2.01358e-01   9.68403e+02
+   6  p2           0.00000e+00   2.00000e-01   2.01358e-01   6.60801e+02
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-192403 FROM MIGRAD    STATUS=CONVERGED     111 CALLS         112 TOTAL
+                     EDM=0.000116351    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       1.95413e+04   1.49373e+02   4.37927e-05   1.63530e+00
+   2  NumSig       2.37412e+02   5.15741e+01   1.40749e-03  -3.51264e-01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28969e+00   2.19225e-03   8.82707e-03  -2.63399e-01
+   5  p1          -1.54137e-01   1.29447e-02   3.90175e-03  -4.86001e-01
+   6  p2          -8.97522e-02   1.40888e-02   3.99590e-03   2.65905e-01
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  5    ERR DEF=0.5
+  2.231e+04 -2.300e+03  4.274e-03 -2.832e-02 -1.165e-01 
+ -2.300e+03  2.660e+03 -4.123e-03 -6.241e-02  2.389e-01 
+  4.274e-03 -4.123e-03  4.807e-06 -8.400e-07 -5.089e-07 
+ -2.832e-02 -6.241e-02 -8.400e-07  1.676e-04 -3.135e-05 
+ -1.165e-01  2.389e-01 -5.089e-07 -3.135e-05  1.985e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      4      5      6
+        1  0.30409   1.000 -0.298  0.013 -0.015 -0.055
+        2  0.43553  -0.298  1.000 -0.036 -0.093  0.329
+        4  0.05027   0.013 -0.036  1.000 -0.030 -0.016
+        5  0.18336  -0.015 -0.093 -0.030  1.000 -0.172
+        6  0.36017  -0.055  0.329 -0.016 -0.172  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   11 **SET ERR         0.5
+ **********
+ **********
+ **   12 **SET PRINT           1
+ **********
+ **********
+ **   13 **HESSE        4500
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-192403 FROM HESSE     STATUS=OK             31 CALLS         143 TOTAL
+                     EDM=0.000116231    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  NumBkg       1.95413e+04   1.49489e+02   1.75171e-06   1.98493e-02
+   2  NumSig       2.37412e+02   5.16074e+01   5.62997e-05   2.37434e-02
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28969e+00   2.18988e-03   3.53083e-04   6.25551e-02
+   5  p1          -1.54137e-01   1.29498e-02   7.80350e-04  -1.54753e-01
+   6  p2          -8.97522e-02   1.40966e-02   1.59836e-04  -8.98731e-02
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  5    ERR DEF=0.5
+  2.235e+04 -2.321e+03  1.125e-03 -2.678e-02 -1.190e-01 
+ -2.321e+03  2.663e+03 -7.931e-04 -6.374e-02  2.398e-01 
+  1.125e-03 -7.931e-04  4.797e-06 -9.262e-07 -1.709e-07 
+ -2.678e-02 -6.374e-02 -9.262e-07  1.677e-04 -3.174e-05 
+ -1.190e-01  2.398e-01 -1.709e-07 -3.174e-05  1.987e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      4      5      6
+        1  0.30640   1.000 -0.301  0.003 -0.014 -0.056
+        2  0.43669  -0.301  1.000 -0.007 -0.095  0.330
+        4  0.03527   0.003 -0.007  1.000 -0.033 -0.006
+        5  0.18546  -0.014 -0.095 -0.033  1.000 -0.174
+        6  0.36151  -0.056  0.330 -0.006 -0.174  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   14 **MINOS        4500           1
+ **********
+ FCN=-192403 FROM MINOS     STATUS=SUCCESSFUL     37 CALLS         180 TOTAL
+                     EDM=0.000116231    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       1.95413e+04   1.49489e+02  -1.49226e+02   1.49777e+02
+   2  NumSig       2.37412e+02   5.16074e+01                            
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28969e+00   2.18988e-03                            
+   5  p1          -1.54137e-01   1.29498e-02                            
+   6  p2          -8.97522e-02   1.40966e-02                            
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   15 **MINOS        4500           2
+ **********
+ FCN=-192403 FROM MINOS     STATUS=SUCCESSFUL     75 CALLS         255 TOTAL
+                     EDM=0.000116231    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       1.95413e+04   1.49489e+02  -1.49226e+02   1.49777e+02
+   2  NumSig       2.37412e+02   5.16074e+01  -5.12585e+01   5.19726e+01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28969e+00   2.18988e-03                            
+   5  p1          -1.54137e-01   1.29498e-02                            
+   6  p2          -8.97522e-02   1.40966e-02                            
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+Info in <TMinuitMinimizer::GetMinosError>: Parameter float_width is fixed. There are no Minos error to calculate. Ignored.
+ **********
+ **   16 **MINOS        4500           4
+ **********
+ FCN=-192403 FROM MINOS     STATUS=SUCCESSFUL     76 CALLS         331 TOTAL
+                     EDM=0.000116231    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       1.95413e+04   1.49489e+02  -1.49226e+02   1.49777e+02
+   2  NumSig       2.37412e+02   5.16074e+01  -5.12585e+01   5.19726e+01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28969e+00   2.18988e-03  -2.20629e-03   2.21807e-03
+   5  p1          -1.54137e-01   1.29498e-02                            
+   6  p2          -8.97522e-02   1.40966e-02                            
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   17 **MINOS        4500           5
+ **********
+ FCN=-192403 FROM MINOS     STATUS=SUCCESSFUL     75 CALLS         406 TOTAL
+                     EDM=0.000116231    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       1.95413e+04   1.49489e+02  -1.49226e+02   1.49777e+02
+   2  NumSig       2.37412e+02   5.16074e+01  -5.12585e+01   5.19726e+01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28969e+00   2.18988e-03  -2.20629e-03   2.21807e-03
+   5  p1          -1.54137e-01   1.29498e-02  -1.28561e-02   1.30465e-02
+   6  p2          -8.97522e-02   1.40966e-02                            
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   18 **MINOS        4500           6
+ **********
+ FCN=-192403 FROM MINOS     STATUS=SUCCESSFUL     76 CALLS         482 TOTAL
+                     EDM=0.000116231    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       1.95413e+04   1.49489e+02  -1.49226e+02   1.49777e+02
+   2  NumSig       2.37412e+02   5.16074e+01  -5.12585e+01   5.19726e+01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28969e+00   2.18988e-03  -2.20629e-03   2.21807e-03
+   5  p1          -1.54137e-01   1.29498e-02  -1.28561e-02   1.30465e-02
+   6  p2          -8.97522e-02   1.40966e-02  -1.41908e-02   1.40071e-02
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+Info in <TMinuitMinimizer::GetMinosError>: Parameter ratio is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width1 is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width2 is fixed. There are no Minos error to calculate. Ignored.
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_ds'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_ds'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (back)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range [2.108,2.444]
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_ds'
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) constructing test statistic for sub-range named fit
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   19 **SET PRINT           1
+ **********
+ **********
+ **   20 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 NumBkg       1.95413e+04  1.49489e+02   -9.84550e+05  9.84550e+05
+     2 NumSig       2.37412e+02  5.16074e+01   -1.00000e+04  1.00000e+04
+     3 float_width   1.57415e-01  1.57415e-02     no limits
+ **********
+ **   21 **FIX           3
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     4 mean         2.28969e+00  2.18988e-03    2.21000e+00  2.36000e+00
+     5 p1          -1.54137e-01  1.29498e-02   -1.00000e+00  1.00000e+00
+     6 p2          -8.97522e-02  1.40966e-02   -1.00000e+00  1.00000e+00
+     7 ratio        7.53353e-01  7.53353e-02     no limits
+ **********
+ **   22 **FIX           7
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     8 width1       6.37924e-03  6.37924e-04     no limits
+ **********
+ **   23 **FIX           8
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     9 width2       1.32121e-02  1.32121e-03     no limits
+ **********
+ **   24 **FIX           9
+ **********
+ **********
+ **   25 **SET ERR         0.5
+ **********
+ **********
+ **   26 **SET PRINT           1
+ **********
+ **********
+ **   27 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   28 **MIGRAD        4500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-192403 FROM MIGRAD    STATUS=INITIATE       10 CALLS          11 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       1.95413e+04   1.49489e+02   1.51865e-04  -4.63668e-02
+   2  NumSig       2.37412e+02   5.16074e+01   5.16221e-03  -5.59924e-01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28969e+00   2.18988e-03   2.92598e-02  -2.49175e-01
+   5  p1          -1.54137e-01   1.29498e-02   1.31069e-02  -4.87743e-01
+   6  p2          -8.97522e-02   1.40966e-02   1.41542e-02   2.88888e-01
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-192403 FROM MIGRAD    STATUS=CONVERGED      62 CALLS          63 TOTAL
+                     EDM=7.67001e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       1.95413e+04   1.49374e+02   4.37866e-05   9.82069e+00
+   2  NumSig       2.37532e+02   5.15812e+01   1.40661e-03   5.47110e-01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28970e+00   2.19169e-03   8.86106e-03  -7.11755e-03
+   5  p1          -1.54057e-01   1.29447e-02   3.90112e-03  -1.29148e-02
+   6  p2          -8.98023e-02   1.40894e-02   3.99727e-03  -9.17342e-03
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  5    ERR DEF=0.5
+  2.231e+04 -2.300e+03  4.445e-03 -2.833e-02 -1.165e-01 
+ -2.300e+03  2.661e+03 -4.305e-03 -6.241e-02  2.389e-01 
+  4.445e-03 -4.305e-03  4.805e-06 -8.350e-07 -5.272e-07 
+ -2.833e-02 -6.241e-02 -8.350e-07  1.676e-04 -3.135e-05 
+ -1.165e-01  2.389e-01 -5.272e-07 -3.135e-05  1.985e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      4      5      6
+        1  0.30409   1.000 -0.298  0.014 -0.015 -0.055
+        2  0.43561  -0.298  1.000 -0.038 -0.093  0.329
+        4  0.05145   0.014 -0.038  1.000 -0.029 -0.017
+        5  0.18335  -0.015 -0.093 -0.029  1.000 -0.172
+        6  0.36017  -0.055  0.329 -0.017 -0.172  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   29 **SET ERR         0.5
+ **********
+ **********
+ **   30 **SET PRINT           1
+ **********
+ **********
+ **   31 **HESSE        4500
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-192403 FROM HESSE     STATUS=OK             31 CALLS          94 TOTAL
+                     EDM=7.63857e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  NumBkg       1.95413e+04   1.49489e+02   1.75146e-06   1.98493e-02
+   2  NumSig       2.37532e+02   5.16122e+01   5.62644e-05   2.37555e-02
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28970e+00   2.18920e-03   3.54443e-04   6.27684e-02
+   5  p1          -1.54057e-01   1.29502e-02   1.56045e-04  -1.54673e-01
+   6  p2          -8.98023e-02   1.40976e-02   1.59891e-04  -8.99234e-02
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  5    ERR DEF=0.5
+  2.235e+04 -2.321e+03  1.287e-03 -2.676e-02 -1.190e-01 
+ -2.321e+03  2.664e+03 -9.636e-04 -6.377e-02  2.399e-01 
+  1.287e-03 -9.636e-04  4.794e-06 -9.215e-07 -1.881e-07 
+ -2.676e-02 -6.377e-02 -9.215e-07  1.677e-04 -3.177e-05 
+ -1.190e-01  2.399e-01 -1.881e-07 -3.177e-05  1.988e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      4      5      6
+        1  0.30639   1.000 -0.301  0.004 -0.014 -0.056
+        2  0.43670  -0.301  1.000 -0.009 -0.095  0.330
+        4  0.03560   0.004 -0.009  1.000 -0.032 -0.006
+        5  0.18559  -0.014 -0.095 -0.032  1.000 -0.174
+        6  0.36156  -0.056  0.330 -0.006 -0.174  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   32 **MINOS        4500           1
+ **********
+ FCN=-192403 FROM MINOS     STATUS=SUCCESSFUL     38 CALLS         132 TOTAL
+                     EDM=7.63857e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       1.95413e+04   1.49489e+02  -1.49219e+02   1.49768e+02
+   2  NumSig       2.37532e+02   5.16122e+01                            
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28970e+00   2.18920e-03                            
+   5  p1          -1.54057e-01   1.29502e-02                            
+   6  p2          -8.98023e-02   1.40976e-02                            
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   33 **MINOS        4500           2
+ **********
+ FCN=-192403 FROM MINOS     STATUS=SUCCESSFUL     37 CALLS         169 TOTAL
+                     EDM=7.63857e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       1.95413e+04   1.49489e+02  -1.49219e+02   1.49768e+02
+   2  NumSig       2.37532e+02   5.16122e+01  -5.13743e+01   5.18469e+01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28970e+00   2.18920e-03                            
+   5  p1          -1.54057e-01   1.29502e-02                            
+   6  p2          -8.98023e-02   1.40976e-02                            
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+Info in <TMinuitMinimizer::GetMinosError>: Parameter float_width is fixed. There are no Minos error to calculate. Ignored.
+ **********
+ **   34 **MINOS        4500           4
+ **********
+ FCN=-192403 FROM MINOS     STATUS=SUCCESSFUL     76 CALLS         245 TOTAL
+                     EDM=7.63857e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       1.95413e+04   1.49489e+02  -1.49219e+02   1.49768e+02
+   2  NumSig       2.37532e+02   5.16122e+01  -5.13743e+01   5.18469e+01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28970e+00   2.18920e-03  -2.22213e-03   2.20198e-03
+   5  p1          -1.54057e-01   1.29502e-02                            
+   6  p2          -8.98023e-02   1.40976e-02                            
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   35 **MINOS        4500           5
+ **********
+ FCN=-192403 FROM MINOS     STATUS=SUCCESSFUL     40 CALLS         285 TOTAL
+                     EDM=7.63857e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       1.95413e+04   1.49489e+02  -1.49219e+02   1.49768e+02
+   2  NumSig       2.37532e+02   5.16122e+01  -5.13743e+01   5.18469e+01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28970e+00   2.18920e-03  -2.22213e-03   2.20198e-03
+   5  p1          -1.54057e-01   1.29502e-02  -1.29353e-02   1.29658e-02
+   6  p2          -8.98023e-02   1.40976e-02                            
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   36 **MINOS        4500           6
+ **********
+ FCN=-192403 FROM MINOS     STATUS=SUCCESSFUL     39 CALLS         324 TOTAL
+                     EDM=7.63857e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       1.95413e+04   1.49489e+02  -1.49219e+02   1.49768e+02
+   2  NumSig       2.37532e+02   5.16122e+01  -5.13743e+01   5.18469e+01
+   3  float_width   1.57415e-01     fixed    
+   4  mean         2.28970e+00   2.18920e-03  -2.22213e-03   2.20198e-03
+   5  p1          -1.54057e-01   1.29502e-02  -1.29353e-02   1.29658e-02
+   6  p2          -8.98023e-02   1.40976e-02  -1.41399e-02   1.40564e-02
+   7  ratio        7.53353e-01     fixed    
+   8  width1       6.37924e-03     fixed    
+   9  width2       1.32121e-02     fixed    
+                               ERR DEF= 0.5
+Info in <TMinuitMinimizer::GetMinosError>: Parameter ratio is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width1 is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width2 is fixed. There are no Minos error to calculate. Ignored.
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+low: 51
+high: 52
+err: 0
+
+  RooFitResult: minimized FCN value: -192403, estimated distance to minimum: 7.63857e-06
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 MINOS=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                NumBkg    1.9541e+04 +/-  1.49e+02
+                NumSig    2.3753e+02 +/-  5.16e+01
+           float_width    1.5741e-01 +/-  0.00e+00
+                  mean    2.2897e+00 +/-  2.19e-03
+                    p1   -1.5406e-01 +/-  1.30e-02
+                    p2   -8.9802e-02 +/-  1.41e-02
+                 ratio    7.5335e-01 +/-  0.00e+00
+                width1    6.3792e-03 +/-  0.00e+00
+                width2    1.3212e-02 +/-  0.00e+00
+
+Info in <TCanvas::Print>: pdf file /scratch/halstead/x/xiao147/2017_pp_fullproduction_03112020_2/fill_3_100_BDTG/systematic_signal_extraction/pol2_fix_sig/pp_20_30_whole_DCA_range_withhits.pdf has been created
+Info in <TCanvas::SaveSource>: C++ Macro file: /scratch/halstead/x/xiao147/2017_pp_fullproduction_03112020_2/fill_3_100_BDTG/systematic_signal_extraction/pol2_fix_sig/pp_20_30_whole_DCA_range_withhits.C has been generated

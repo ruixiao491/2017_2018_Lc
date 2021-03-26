@@ -1,0 +1,2063 @@
+nohup: ignoring input
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.10/09                http://root.cern.ch |
+  |                               (c) 1995-2017, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag , 16 October 2017                                 |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+WARNING: AutoLibraryloader::enable() and AutoLibraryLoader.h are deprecated.
+Use FWLiteEnabler::enable() and FWLiteEnabler.h instead
+
+Processing unbinned_fit_test_modified_PbPb_trytomanytimes_15_20_pol2.C...
+Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
+[#1] INFO:Eval -- RooAbsReal::attachToTree(mass) TTree Float_t branch mass will be converted to double precision
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(ds) Ignored 8024 out of range events
+RooDataSet::ds[mass] = 61851 entries
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c1
+begin fitting
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'fit' created with bounds [2.108,2.444]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'NormalizationRangeForfit' created with bounds [2.1,2.444]
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'fit_nll_model_ds' created with bounds [2.108,2.444]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 NumBkg       6.18510e+04  6.18510e+05   -3.09255e+06  3.09255e+06
+     2 NumSig       6.50000e+02  6.50000e+03   -3.25000e+04  3.25000e+04
+     3 float_width   0.00000e+00  2.00000e-01   -1.00000e+00  1.00000e+00
+     4 mean         2.28787e+00  1.50000e-02    2.21000e+00  2.36000e+00
+     5 p1           0.00000e+00  2.00000e-01   -1.00000e+00  1.00000e+00
+     6 p2           0.00000e+00  2.00000e-01   -1.00000e+00  1.00000e+00
+     7 p3           0.00000e+00  2.00000e-01   -1.00000e+00  1.00000e+00
+     8 ratio        8.64574e-01  8.64574e-02     no limits
+ **********
+ **    3 **FIX           8
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     9 width1       6.68920e-03  6.68920e-04     no limits
+ **********
+ **    4 **FIX           9
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+    10 width2       1.81433e-02  1.81433e-03     no limits
+ **********
+ **    5 **FIX          10
+ **********
+ **********
+ **    6 **SET ERR         0.5
+ **********
+ **********
+ **    7 **SET PRINT           1
+ **********
+ **********
+ **    8 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    9 **MIGRAD        5000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -182278
+ FCN=-671718 FROM MIGRAD    STATUS=INITIATE       30 CALLS          31 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       6.18510e+04   6.18510e+05   2.01400e-01   2.58275e+04
+   2  NumSig       6.50000e+02   6.50000e+03   2.01400e-01   4.03644e+02
+   3  float_width   0.00000e+00   2.00000e-01   2.01358e-01  -1.58185e+01
+   4  mean         2.28787e+00   1.50000e-02   2.01514e-01   1.83444e+02
+   5  p1           0.00000e+00   2.00000e-01   2.01358e-01   3.33701e+03
+   6  p2           0.00000e+00   2.00000e-01   2.01358e-01   1.34816e+03
+   7  p3           0.00000e+00   2.00000e-01   2.01358e-01  -2.56811e+03
+   8  ratio        8.64574e-01     fixed    
+   9  width1       6.68920e-03     fixed    
+  10  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=-672055 FROM MIGRAD    STATUS=CONVERGED     126 CALLS         127 TOTAL
+                     EDM=0.000320645    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   4.7 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       6.14107e+04   2.60742e+02   0.00000e+00  -8.66404e+01
+   2  NumSig       6.13858e+02   8.17435e+01   0.00000e+00  -2.71789e+00
+   3  float_width   2.42505e-01   1.19991e-01   0.00000e+00  -1.29694e-01
+   4  mean         2.28467e+00   1.51620e-03   0.00000e+00  -5.40951e-01
+   5  p1          -1.57965e-01   8.78678e-03  -0.00000e+00  -4.49883e-01
+   6  p2          -5.88804e-02   7.87009e-03  -0.00000e+00   9.08893e-01
+   7  p3           1.93545e-02   7.32424e-03  -0.00000e+00   1.19373e+00
+   8  ratio        8.64574e-01     fixed    
+   9  width1       6.68920e-03     fixed    
+  10  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  6.799e+04 -5.160e+03  2.946e+00  7.592e-03 -1.408e-01  1.058e-02 -1.341e-01 
+ -5.160e+03  6.682e+03 -8.361e-01 -1.040e-02 -3.612e-02  1.625e-01  4.469e-03 
+  2.946e+00 -8.361e-01  1.447e-02  5.833e-06 -1.196e-05 -9.569e-05 -3.526e-05 
+  7.592e-03 -1.040e-02  5.833e-06  2.299e-06  2.707e-07 -8.751e-07  1.005e-06 
+ -1.408e-01 -3.612e-02 -1.196e-05  2.707e-07  7.721e-05 -1.461e-05  3.667e-05 
+  1.058e-02  1.625e-01 -9.569e-05 -8.751e-07 -1.461e-05  6.194e-05 -1.229e-05 
+ -1.341e-01  4.469e-03 -3.526e-05  1.005e-06  3.667e-05 -1.229e-05  5.365e-05 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.27112   1.000 -0.242  0.094  0.019 -0.061  0.005 -0.070
+        2  0.36403  -0.242  1.000 -0.085 -0.084 -0.050  0.253  0.007
+        3  0.15578   0.094 -0.085  1.000  0.032 -0.011 -0.101 -0.040
+        4  0.13938   0.019 -0.084  0.032  1.000  0.020 -0.073  0.090
+        5  0.58010  -0.061 -0.050 -0.011  0.020  1.000 -0.211  0.570
+        6  0.36139   0.005  0.253 -0.101 -0.073 -0.211  1.000 -0.213
+        7  0.58766  -0.070  0.007 -0.040  0.090  0.570 -0.213  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   10 **SET ERR         0.5
+ **********
+ **********
+ **   11 **SET PRINT           1
+ **********
+ **********
+ **   12 **HESSE        5000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-672055 FROM HESSE     STATUS=OK             60 CALLS         187 TOTAL
+                     EDM=0.00111326    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  NumBkg       6.14107e+04   2.74783e+02   4.61870e-05   1.98589e-02
+   2  NumSig       6.13858e+02   1.16362e+02   1.45483e-03   1.88891e-02
+   3  float_width   2.42505e-01   2.51620e-01   1.25602e-01   2.44947e-01
+   4  mean         2.28467e+00   1.67676e-03   1.27207e-02  -4.38462e-03
+   5  p1          -1.57965e-01   8.78620e-03   4.11092e-03  -1.58630e-01
+   6  p2          -5.88804e-02   8.29954e-03   4.15749e-03  -5.89145e-02
+   7  p3           1.93545e-02   7.36433e-03   3.38957e-03   1.93557e-02
+   8  ratio        8.64574e-01     fixed    
+   9  width1       6.68920e-03     fixed    
+  10  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  7.551e+04 -1.239e+04 -1.691e+01 -1.181e-02 -1.277e-01 -2.370e-01 -1.784e-01 
+ -1.239e+04  1.354e+04  1.762e+01  1.013e-02 -5.119e-02  3.920e-01  4.375e-02 
+ -1.691e+01  1.762e+01  6.479e-02  6.166e-05 -6.446e-05  5.108e-04  7.927e-05 
+ -1.181e-02  1.013e-02  6.166e-05  2.812e-06  2.340e-07  3.476e-08  1.148e-06 
+ -1.277e-01 -5.119e-02 -6.446e-05  2.340e-07  7.720e-05 -1.632e-05  3.637e-05 
+ -2.370e-01  3.920e-01  5.108e-04  3.476e-08 -1.632e-05  6.888e-05 -1.140e-05 
+ -1.784e-01  4.375e-02  7.927e-05  1.148e-06  3.637e-05 -1.140e-05  5.423e-05 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.39773   1.000 -0.387 -0.242 -0.026 -0.053 -0.104 -0.088
+        2  0.69913  -0.387  1.000  0.595  0.052 -0.050  0.406  0.051
+        3  0.60571  -0.242  0.595  1.000  0.144 -0.029  0.242  0.042
+        4  0.17876  -0.026  0.052  0.144  1.000  0.016  0.002  0.093
+        5  0.57765  -0.053 -0.050 -0.029  0.016  1.000 -0.224  0.562
+        6  0.46926  -0.104  0.406  0.242  0.002 -0.224  1.000 -0.187
+        7  0.58285  -0.088  0.051  0.042  0.093  0.562 -0.187  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   13 **MINOS        5000           1
+ **********
+ FCN=-672055 FROM MINOS     STATUS=SUCCESSFUL    137 CALLS         324 TOTAL
+                     EDM=0.00111326    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       6.14107e+04   2.74783e+02  -2.75555e+02   2.82245e+02
+   2  NumSig       6.13858e+02   1.16362e+02                            
+   3  float_width   2.42505e-01   2.51620e-01                            
+   4  mean         2.28467e+00   1.67676e-03                            
+   5  p1          -1.57965e-01   8.78620e-03                            
+   6  p2          -5.88804e-02   8.29954e-03                            
+   7  p3           1.93545e-02   7.36433e-03                            
+   8  ratio        8.64574e-01     fixed    
+   9  width1       6.68920e-03     fixed    
+  10  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   14 **MINOS        5000           2
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.01951 added to diagonal of error matrix
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (920732) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=2.21541e+06, NumSig=742.906, float_width=0.669751, mean=2.28082, p1=-0.560742, p2=-0.333514, p3=0.956854, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3) ]
+     p.d.f value is less than zero (-0.139061), forcing value to zero @ x=mass=2.37651, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.100543), forcing value to zero @ x=mass=2.36277, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.091404), forcing value to zero @ x=mass=2.39112, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.086436), forcing value to zero @ x=mass=2.39184, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.124310), forcing value to zero @ x=mass=2.36811, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.012983), forcing value to zero @ x=mass=2.35107, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.066740), forcing value to zero @ x=mass=2.3944, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.076476), forcing value to zero @ x=mass=2.39319, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.082750), forcing value to zero @ x=mass=2.3598, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.116330), forcing value to zero @ x=mass=2.36603, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.121036), forcing value to zero @ x=mass=2.3672, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+     p.d.f value is less than zero (-0.092449), forcing value to zero @ x=mass=2.36135, coefList=(p1 = -0.560742 +/- 0.0087862,p2 = -0.333514 +/- 0.00829954,p3 = 0.956854 +/- 0.00736433)
+    ... (remaining 2038 messages suppressed)
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.64396e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.97057e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -49914.2
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (920732) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=64730.7, NumSig=742.906, float_width=0.667622, mean=2.28078, p1=-0.45044, p2=-0.204612, p3=0.985362, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3) ]
+     p.d.f value is less than zero (-0.138172), forcing value to zero @ x=mass=2.3735, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.132990), forcing value to zero @ x=mass=2.36462, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.053000), forcing value to zero @ x=mass=2.38993, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.140161), forcing value to zero @ x=mass=2.37021, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.107198), forcing value to zero @ x=mass=2.35779, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.066431), forcing value to zero @ x=mass=2.38841, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.017315), forcing value to zero @ x=mass=2.3454, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.019334), forcing value to zero @ x=mass=2.39326, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.129635), forcing value to zero @ x=mass=2.36337, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.132155), forcing value to zero @ x=mass=2.37651, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.127806), forcing value to zero @ x=mass=2.36277, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+     p.d.f value is less than zero (-0.041610), forcing value to zero @ x=mass=2.39112, coefList=(p1 = -0.45044 +/- 0.0087862,p2 = -0.204612 +/- 0.00829954,p3 = 0.985362 +/- 0.00736433)
+    ... (remaining 2038 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (920732) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=62800.6, NumSig=742.906, float_width=0.668003, mean=2.2848, p1=0.174833, p2=0.582929, p3=-0.675702, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3) ]
+     p.d.f value is less than zero (-0.019553), forcing value to zero @ x=mass=2.22881, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.087585), forcing value to zero @ x=mass=2.21456, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.068394), forcing value to zero @ x=mass=2.21977, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.088017), forcing value to zero @ x=mass=2.21442, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.026894), forcing value to zero @ x=mass=2.18175, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.090441), forcing value to zero @ x=mass=2.21357, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.090870), forcing value to zero @ x=mass=2.21342, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.087869), forcing value to zero @ x=mass=2.19343, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.084725), forcing value to zero @ x=mass=2.21547, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.103873), forcing value to zero @ x=mass=2.2022, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.025812), forcing value to zero @ x=mass=2.18161, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+     p.d.f value is less than zero (-0.103479), forcing value to zero @ x=mass=2.20601, coefList=(p1 = 0.174833 +/- 0.0087862,p2 = 0.582929 +/- 0.00829954,p3 = -0.675702 +/- 0.00736433)
+    ... (remaining 2038 messages suppressed)
+
+ FCN=-672055 FROM MINOS     STATUS=SUCCESSFUL    328 CALLS         652 TOTAL
+                     EDM=0.00111326    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       6.14107e+04   2.74783e+02  -2.75555e+02   2.82245e+02
+   2  NumSig       6.13858e+02   1.16362e+02  -1.21124e+02   1.30204e+02
+   3  float_width   2.42505e-01   2.51620e-01                            
+   4  mean         2.28467e+00   1.67676e-03                            
+   5  p1          -1.57965e-01   8.78620e-03                            
+   6  p2          -5.88804e-02   8.29954e-03                            
+   7  p3           1.93545e-02   7.36433e-03                            
+   8  ratio        8.64574e-01     fixed    
+   9  width1       6.68920e-03     fixed    
+  10  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   15 **MINOS        5000           3
+ **********
+ FCN=-672055 FROM MINOS     STATUS=SUCCESSFUL    179 CALLS         831 TOTAL
+                     EDM=0.00111326    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       6.14107e+04   2.74783e+02  -2.75555e+02   2.82245e+02
+   2  NumSig       6.13858e+02   1.16362e+02  -1.21124e+02   1.30204e+02
+   3  float_width   2.42505e-01   2.51620e-01  -2.55633e-01   3.01765e-01
+   4  mean         2.28467e+00   1.67676e-03                            
+   5  p1          -1.57965e-01   8.78620e-03                            
+   6  p2          -5.88804e-02   8.29954e-03                            
+   7  p3           1.93545e-02   7.36433e-03                            
+   8  ratio        8.64574e-01     fixed    
+   9  width1       6.68920e-03     fixed    
+  10  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   16 **MINOS        5000           4
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.01399 added to diagonal of error matrix
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.03152e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (920732) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=75445.6, NumSig=-14053.5, float_width=0.407504, mean=2.28639, p1=-0.190483, p2=-0.188725, p3=0.0908306, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-0.001189), forcing value to zero @ !refCoefNorm=(mass = 2.29925), !pdfs=(signal = 16.2633/1,back = 1.10733/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29925), !pdfs=(signal = 16.2633/1,back = 1.10733/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     p.d.f value is less than zero (-2.792548), forcing value to zero @ !refCoefNorm=(mass = 2.29402), !pdfs=(signal = 28.3934/1,back = 1.12402/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29402), !pdfs=(signal = 28.3934/1,back = 1.12402/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     p.d.f value is less than zero (-0.581879), forcing value to zero @ !refCoefNorm=(mass = 2.29811), !pdfs=(signal = 18.7901/1,back = 1.11103/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29811), !pdfs=(signal = 18.7901/1,back = 1.11103/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     p.d.f value is less than zero (-1.072773), forcing value to zero @ !refCoefNorm=(mass = 2.27599), !pdfs=(signal = 21.8603/1,back = 1.17778/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.27599), !pdfs=(signal = 21.8603/1,back = 1.17778/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     p.d.f value is less than zero (-4.884431), forcing value to zero @ !refCoefNorm=(mass = 2.28417), !pdfs=(signal = 37.7433/1,back = 1.15419/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28417), !pdfs=(signal = 37.7433/1,back = 1.15419/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     p.d.f value is less than zero (-1.762267), forcing value to zero @ !refCoefNorm=(mass = 2.29592), !pdfs=(signal = 23.9185/1,back = 1.11802/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29592), !pdfs=(signal = 23.9185/1,back = 1.11802/0.358104), !coefficients=(NumSig = -14053.5 +/- 116.362,NumBkg = 75445.6 +/- 274.783)
+    ... (remaining 2038 messages suppressed)
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = 75445.6 +/- 274.783,NumSig = -14053.5 +/- 116.362,float_width = 0.407504 +/- 0.25162,mean = 2.28639 +/- 0.00167676,p1 = -0.190483 +/- 0.0087862,p2 = -0.188725 +/- 0.00829954,p3 = 0.0908306 +/- 0.00736433,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+
+ FCN=-672055 FROM MINOS     STATUS=SUCCESSFUL    264 CALLS        1095 TOTAL
+                     EDM=0.00111326    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       6.14107e+04   2.74783e+02  -2.75555e+02   2.82245e+02
+   2  NumSig       6.13858e+02   1.16362e+02  -1.21124e+02   1.30204e+02
+   3  float_width   2.42505e-01   2.51620e-01  -2.55633e-01   3.01765e-01
+   4  mean         2.28467e+00   1.67676e-03  -1.64189e-03   1.71838e-03
+   5  p1          -1.57965e-01   8.78620e-03                            
+   6  p2          -5.88804e-02   8.29954e-03                            
+   7  p3           1.93545e-02   7.36433e-03                            
+   8  ratio        8.64574e-01     fixed    
+   9  width1       6.68920e-03     fixed    
+  10  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   17 **MINOS        5000           5
+ **********
+ FCN=-672055 FROM MINOS     STATUS=SUCCESSFUL     48 CALLS        1143 TOTAL
+                     EDM=0.00111326    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       6.14107e+04   2.74783e+02  -2.75555e+02   2.82245e+02
+   2  NumSig       6.13858e+02   1.16362e+02  -1.21124e+02   1.30204e+02
+   3  float_width   2.42505e-01   2.51620e-01  -2.55633e-01   3.01765e-01
+   4  mean         2.28467e+00   1.67676e-03  -1.64189e-03   1.71838e-03
+   5  p1          -1.57965e-01   8.78620e-03  -8.76959e-03   8.79712e-03
+   6  p2          -5.88804e-02   8.29954e-03                            
+   7  p3           1.93545e-02   7.36433e-03                            
+   8  ratio        8.64574e-01     fixed    
+   9  width1       6.68920e-03     fixed    
+  10  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   18 **MINOS        5000           6
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.01419 added to diagonal of error matrix
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -305490
+ MIGRAD FAILS WITH STRATEGY=0.   WILL TRY WITH STRATEGY=1.
+ FCN=-672055 FROM MINOS     STATUS=SUCCESSFUL    342 CALLS        1485 TOTAL
+                     EDM=0.00111326    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       6.14107e+04   2.74783e+02  -2.75555e+02   2.82245e+02
+   2  NumSig       6.13858e+02   1.16362e+02  -1.21124e+02   1.30204e+02
+   3  float_width   2.42505e-01   2.51620e-01  -2.55633e-01   3.01765e-01
+   4  mean         2.28467e+00   1.67676e-03  -1.64189e-03   1.71838e-03
+   5  p1          -1.57965e-01   8.78620e-03  -8.76959e-03   8.79712e-03
+   6  p2          -5.88804e-02   8.29954e-03  -8.49843e-03   8.33319e-03
+   7  p3           1.93545e-02   7.36433e-03                            
+   8  ratio        8.64574e-01     fixed    
+   9  width1       6.68920e-03     fixed    
+  10  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   19 **MINOS        5000           7
+ **********
+ FCN=-672055 FROM MINOS     STATUS=SUCCESSFUL     72 CALLS        1557 TOTAL
+                     EDM=0.00111326    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       6.14107e+04   2.74783e+02  -2.75555e+02   2.82245e+02
+   2  NumSig       6.13858e+02   1.16362e+02  -1.21124e+02   1.30204e+02
+   3  float_width   2.42505e-01   2.51620e-01  -2.55633e-01   3.01765e-01
+   4  mean         2.28467e+00   1.67676e-03  -1.64189e-03   1.71838e-03
+   5  p1          -1.57965e-01   8.78620e-03  -8.76959e-03   8.79712e-03
+   6  p2          -5.88804e-02   8.29954e-03  -8.49843e-03   8.33319e-03
+   7  p3           1.93545e-02   7.36433e-03  -7.39511e-03   7.32438e-03
+   8  ratio        8.64574e-01     fixed    
+   9  width1       6.68920e-03     fixed    
+  10  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+Info in <TMinuitMinimizer::GetMinosError>: Parameter ratio is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width1 is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width2 is fixed. There are no Minos error to calculate. Ignored.
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_ds'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_ds'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (back)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range [2.108,2.444]
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_ds'
+low: 121
+high: 130
+err: 4
+
+  RooFitResult: minimized FCN value: -672055, estimated distance to minimum: 0.00111326
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 MINOS=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                NumBkg    6.1411e+04 +/-  2.75e+02
+                NumSig    6.1386e+02 +/-  1.16e+02
+           float_width    2.4250e-01 +/-  2.52e-01
+                  mean    2.2847e+00 +/-  1.68e-03
+                    p1   -1.5797e-01 +/-  8.79e-03
+                    p2   -5.8880e-02 +/-  8.30e-03
+                    p3    1.9355e-02 +/-  7.36e-03
+                 ratio    8.6457e-01 +/-  0.00e+00
+                width1    6.6892e-03 +/-  0.00e+00
+                width2    1.8143e-02 +/-  0.00e+00
+
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooAddPdf::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooAddPdf::signal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooGaussian::sigma1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mass
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mean
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooFormulaVar::scale width1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::float_width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::ratio
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooGaussian::sigma2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooFormulaVar::scale width2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::NumSig
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooChebychev::back
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p3
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::NumBkg
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named mean: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named width1: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named width2: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named ratio: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named scale width1: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named scale width2: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named float_width: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named NumSig: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named NumBkg: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset ds
+
+RooWorkspace(w) workspace contents
+
+variables
+---------
+(NumBkg,NumSig,float_width,mass,mean,p1,p2,p3,ratio,width1,width2)
+
+p.d.f.s
+-------
+RooChebychev::back[ x=mass coefList=(p1,p2,p3) ] = 1.05888
+RooAddPdf::model[ NumSig * signal + NumBkg * back ] = 1.05222
+RooGaussian::sigma1[ x=mass mean=mean sigma=scale width1 ] = 0.312816
+RooGaussian::sigma2[ x=mass mean=mean sigma=scale width2 ] = 0.853876
+RooAddPdf::signal[ ratio * sigma1 + [%] * sigma2 ] = 0.38609
+
+functions
+--------
+RooFormulaVar::scale width1[ actualVars=(width1,float_width) formula="width1*(1+float_width)" ] = 0.00831136
+RooFormulaVar::scale width2[ actualVars=(width2,float_width) formula="width2*(1+float_width)" ] = 0.0225432
+
+datasets
+--------
+RooDataSet::ds(mass)
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 99
+RooMCStudy: now generating 62024 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 98
+RooMCStudy: now generating 61899 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 97
+RooMCStudy: now generating 62253 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 96
+RooMCStudy: now generating 62171 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 95
+RooMCStudy: now generating 62196 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 94
+RooMCStudy: now generating 61895 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 93
+RooMCStudy: now generating 61841 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 92
+RooMCStudy: now generating 61634 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 91
+RooMCStudy: now generating 62001 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 90
+RooMCStudy: now generating 62401 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 89
+RooMCStudy: now generating 62090 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 88
+RooMCStudy: now generating 61998 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 87
+RooMCStudy: now generating 61773 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 86
+RooMCStudy: now generating 62066 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 85
+RooMCStudy: now generating 61957 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 84
+RooMCStudy: now generating 61976 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 83
+RooMCStudy: now generating 62250 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.79366e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.72766e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-50270.3) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-1.72017e+06, NumSig=-7489.37, float_width=-0.0985369, mean=2.21145, p1=-0.949425, p2=0.888618, p3=-0.987844, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9052/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 14625 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -696203
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-50270.3) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-705358, NumSig=9155.05, float_width=0.0360192, mean=2.2215, p1=-0.645172, p2=-0.510191, p3=-0.913278, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9052/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 16446 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-50270.3) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=2.08014e+06, NumSig=-17061.1, float_width=0.103199, mean=2.32917, p1=-0.413413, p2=-0.967455, p3=0.758744, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9052/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 6108 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-50270.3) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=2.29438e+06, NumSig=-24808.5, float_width=0.136619, mean=2.21708, p1=-0.284732, p2=-0.62068, p3=-0.756855, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9052/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 11166 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -353958
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-50270.3) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-353180, NumSig=-778.526, float_width=0.153248, mean=2.35264, p1=-0.218322, p2=-0.340474, p3=-0.987874, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9052/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1410 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-50270.3) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=639708, NumSig=-27972, float_width=0.161496, mean=2.34355, p1=-0.184917, p2=-0.18621, p3=0.821694, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9052/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 16268 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -700080
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.82749e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -964629
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 82
+RooMCStudy: now generating 62053 events
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-351612) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=62764.8, NumSig=-5360.97, float_width=0.481345, mean=2.29182, p1=-0.151934, p2=-0.102374, p3=0.0283671, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9203/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 4724 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 81
+RooMCStudy: now generating 61986 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 80
+RooMCStudy: now generating 62111 events
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (700106) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=81199.6, NumSig=-19726, float_width=0.758235, mean=2.28741, p1=-0.10767, p2=-0.135222, p3=0.0443576, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9537/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 26180 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 79
+RooMCStudy: now generating 62066 events
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-689460) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=77490.5, NumSig=-731.09, float_width=0.992331, mean=2.32216, p1=-0.717803, p2=0.0728626, p3=0.918835, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9735/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 49152 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -60722.4
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.92898e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-57980.7) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-2.91927e+06, NumSig=-9713.93, float_width=0.995446, mean=2.28077, p1=0.426798, p2=-0.0222711, p3=-0.957184, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9735/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 11277 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.57584e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -23709.5
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (2.08064e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=195371, NumSig=31254.5, float_width=0.996203, mean=2.28075, p1=0.431726, p2=0.0171021, p3=-0.961342, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9735/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 12008 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (2.08064e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=52602.6, NumSig=10894.9, float_width=0.994607, mean=2.27791, p1=0.979656, p2=-0.882266, p3=-0.878979, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9735/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 15722 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (2.08064e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=65169.4, NumSig=-3268.84, float_width=0.994819, mean=2.27378, p1=0.275376, p2=-0.570513, p3=0.516153, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID9735/RooRealMPFE::nll_model_modelData_6e0e3f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 10344 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 78
+RooMCStudy: now generating 61679 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 77
+RooMCStudy: now generating 61759 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 76
+RooMCStudy: now generating 62040 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 75
+RooMCStudy: now generating 62126 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 74
+RooMCStudy: now generating 62111 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 73
+RooMCStudy: now generating 61688 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 72
+RooMCStudy: now generating 62177 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 71
+RooMCStudy: now generating 62083 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 70
+RooMCStudy: now generating 62285 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 69
+RooMCStudy: now generating 61876 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 68
+RooMCStudy: now generating 62173 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 67
+RooMCStudy: now generating 61769 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 66
+RooMCStudy: now generating 61835 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 65
+RooMCStudy: now generating 61836 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 64
+RooMCStudy: now generating 61859 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 63
+RooMCStudy: now generating 62499 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 62
+RooMCStudy: now generating 62493 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 61
+RooMCStudy: now generating 61638 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 60
+RooMCStudy: now generating 61630 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 59
+RooMCStudy: now generating 62315 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 58
+RooMCStudy: now generating 62167 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 57
+RooMCStudy: now generating 61996 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 56
+RooMCStudy: now generating 62366 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 55
+RooMCStudy: now generating 61619 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 54
+RooMCStudy: now generating 62365 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 53
+RooMCStudy: now generating 62048 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 52
+RooMCStudy: now generating 62169 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 51
+RooMCStudy: now generating 62220 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 50
+RooMCStudy: now generating 62092 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 49
+RooMCStudy: now generating 62478 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 48
+RooMCStudy: now generating 62100 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 47
+RooMCStudy: now generating 61668 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 46
+RooMCStudy: now generating 62015 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 45
+RooMCStudy: now generating 61946 events
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-688073) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=625385, NumSig=-25455.5, float_width=0.701261, mean=2.34311, p1=-0.489753, p2=-0.815788, p3=0.122122, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID16610/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 5007 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.09262e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -180051
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-66457.7) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=111386, NumSig=-32441.5, float_width=0.701978, mean=2.3431, p1=-0.490551, p2=-0.810807, p3=0.124914, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID16610/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 4905 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-66457.7) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=63360.7, NumSig=-1126.5, float_width=0.693706, mean=2.34268, p1=-0.380697, p2=-0.875416, p3=-0.02936, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID16610/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 5163 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 44
+RooMCStudy: now generating 62242 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 43
+RooMCStudy: now generating 61894 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 42
+RooMCStudy: now generating 61988 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 41
+RooMCStudy: now generating 62003 events
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-688755) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=1.09141e+06, NumSig=16858.7, float_width=0.976176, mean=2.25126, p1=0.850067, p2=-0.882359, p3=-0.599547, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID17392/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 10270 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-688755) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.04431e+06, NumSig=9122.46, float_width=0.947501, mean=2.26617, p1=0.830602, p2=-0.540844, p3=-0.306651, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID17392/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 3973 errors
+
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.99835e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.02814e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-61096.8) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=542717, NumSig=5500.64, float_width=0.976494, mean=2.25129, p1=0.847473, p2=-0.906993, p3=-0.611325, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID17392/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 10399 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-61096.8) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=85455.1, NumSig=-22666.3, float_width=0.912493, mean=2.28032, p1=-0.0502361, p2=-0.115504, p3=-0.0142961, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID17392/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 28424 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-61096.8) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=87791.7, NumSig=-22958.8, float_width=0.964747, mean=2.25231, p1=0.963083, p2=0.852144, p3=-0.851871, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID17392/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 49152 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-61096.8) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=68334.8, NumSig=-6370.6, float_width=0.963069, mean=2.24943, p1=-0.314073, p2=-0.967872, p3=0.985639, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID17392/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 5358 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 40
+RooMCStudy: now generating 62198 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 39
+RooMCStudy: now generating 61665 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.00169e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-684631) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-2.02325e+06, NumSig=21564, float_width=0.619965, mean=2.26352, p1=0.869975, p2=0.189403, p3=-0.996654, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID18237/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 49152 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-684631) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=1.00909e+06, NumSig=-30512.4, float_width=0.593771, mean=2.27455, p1=-0.822869, p2=0.0628485, p3=-0.67076, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID18237/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 5187 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.08786e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-684631) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-3.06143e+06, NumSig=-26435.4, float_width=0.580429, mean=2.28017, p1=-0.918533, p2=-0.000942368, p3=-0.350742, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID18237/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1736 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.30122e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.87461e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -42107.6
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-64062.5) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=146705, NumSig=-10449.4, float_width=0.620787, mean=2.26352, p1=0.870606, p2=0.202197, p3=-0.996245, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID18237/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 49152 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-64062.5) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=44158.9, NumSig=17940.7, float_width=0.605291, mean=2.26405, p1=0.281981, p2=-0.360454, p3=-0.986864, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID18237/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 158 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.97094e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-2450.95) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=74959.1, NumSig=-14259.1, float_width=0.632283, mean=2.28846, p1=-0.334196, p2=-0.203966, p3=-0.0684882, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID18237/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 21156 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 38
+RooMCStudy: now generating 62166 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 37
+RooMCStudy: now generating 61952 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 36
+RooMCStudy: now generating 61979 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 35
+RooMCStudy: now generating 62310 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 34
+RooMCStudy: now generating 62028 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 33
+RooMCStudy: now generating 62245 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 32
+RooMCStudy: now generating 62376 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 31
+RooMCStudy: now generating 61706 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 30
+RooMCStudy: now generating 61741 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 29
+RooMCStudy: now generating 62236 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 28
+RooMCStudy: now generating 61891 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 27
+RooMCStudy: now generating 62015 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 26
+RooMCStudy: now generating 61626 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 25
+RooMCStudy: now generating 62082 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 24
+RooMCStudy: now generating 61660 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 23
+RooMCStudy: now generating 62535 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 22
+RooMCStudy: now generating 62147 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 21
+RooMCStudy: now generating 62333 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 20
+RooMCStudy: now generating 62008 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 19
+RooMCStudy: now generating 62150 events
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-690510) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=1.38492e+06, NumSig=28350.6, float_width=0.938104, mean=2.27571, p1=-0.825533, p2=-0.974359, p3=-0.980691, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID22723/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 3864 errors
+
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -682009
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-690510) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-698807, NumSig=16798, float_width=0.899512, mean=2.28014, p1=-0.536139, p2=-0.64079, p3=-0.765401, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID22723/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 8010 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.08308e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-690510) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-3.07395e+06, NumSig=-9131.32, float_width=0.876923, mean=2.28237, p1=-0.355279, p2=-0.362886, p3=-0.411121, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID22723/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 627 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.17299e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=443773, NumSig=-3495.33, float_width=0.938286, mean=2.27572, p1=-0.824312, p2=-0.9783, p3=-0.9795, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID22723/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 11598 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.17299e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=80571.8, NumSig=-18650.1, float_width=0.857354, mean=2.28415, p1=-0.199816, p2=-0.112994, p3=-0.0659524, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID22723/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 25536 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.17299e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=84827.4, NumSig=-20643.7, float_width=0.92017, mean=2.27602, p1=-0.649412, p2=0.425664, p3=-0.832048, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID22723/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 645 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.17299e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=64257.3, NumSig=-2124.89, float_width=0.915535, mean=2.27081, p1=-0.925617, p2=-0.681206, p3=0.553254, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID22723/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 24987 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 18
+RooMCStudy: now generating 62103 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 17
+RooMCStudy: now generating 61640 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.76806e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (2.04179e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=70760.6, NumSig=-9713.28, float_width=0.789598, mean=2.2856, p1=0.0225857, p2=0.0575483, p3=-0.245205, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID23644/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 16408 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 16
+RooMCStudy: now generating 61959 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.03037e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.10468e+06
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 15
+RooMCStudy: now generating 61750 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 14
+RooMCStudy: now generating 61817 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 13
+RooMCStudy: now generating 62002 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 12
+RooMCStudy: now generating 61761 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 11
+RooMCStudy: now generating 61811 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 10
+RooMCStudy: now generating 62251 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 9
+RooMCStudy: now generating 61657 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 8
+RooMCStudy: now generating 61935 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 7
+RooMCStudy: now generating 61770 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 6
+RooMCStudy: now generating 61966 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 5
+RooMCStudy: now generating 62174 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.07936e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-690748) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-3.08443e+06, NumSig=5073.45, float_width=0.914145, mean=2.275, p1=-0.35478, p2=0.662079, p3=0.939275, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID26453/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 49152 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.29901e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (87907.7) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=462816, NumSig=-25835, float_width=0.916141, mean=2.275, p1=-0.352708, p2=0.647932, p3=0.937094, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID26453/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 49152 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (87907.7) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=81502.9, NumSig=-19671, float_width=0.823058, mean=2.28357, p1=-0.154415, p2=-0.00244643, p3=0.0868396, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID26453/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 27412 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (87907.7) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=75937.2, NumSig=-13411.7, float_width=0.891295, mean=2.27779, p1=0.120231, p2=-0.871654, p3=-0.0317582, ratio=0.864574, width1=0.0066892, width2=0.0181433
+PID26453/RooRealMPFE::nll_model_modelData_7495e60_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 12712 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 4
+RooMCStudy: now generating 62057 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 3
+RooMCStudy: now generating 61851 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 2
+RooMCStudy: now generating 61713 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 1
+RooMCStudy: now generating 62263 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 0
+RooMCStudy: now generating 62369 events
+
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.864574 +/- 0, true=truth=0.864574 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.0066892 +/- 0, true=truth=0.0066892 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0181433 +/- 0, true=truth=0.0181433 +/- 0
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pullGauss_Int[NumSigpull]) using numeric integrator RooIntegrator1D to calculate Int(NumSigpull)
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pullGauss_Int[NumSigpull]) using numeric integrator RooIntegrator1D to calculate Int(NumSigpull)
+Warning in <TROOT::Append>: Replacing existing TH1: ds (Potential memory leak).
+Warning in <TROOT::Append>: Replacing existing TH1: ds (Potential memory leak).
+Info in <TCanvas::Print>: pdf file /home/xiao147/private/2017_pp_Lc_speedup_version_2_toDtuple/CMSSW_9_4_10/src/Bfinder/Bfinder/Dntuple/analysis_firstturn_04072020/signal_fit_firstturn_02062020/ROOT/default_fit/toyMC/pol3_2gaus/pp_15_20_whole_DCA_range_withhits_cut.pdf has been created
+Info in <TCanvas::SaveSource>: C++ Macro file: /home/xiao147/private/2017_pp_Lc_speedup_version_2_toDtuple/CMSSW_9_4_10/src/Bfinder/Bfinder/Dntuple/analysis_firstturn_04072020/signal_fit_firstturn_02062020/ROOT/default_fit/toyMC/pol3_2gaus/pp_15_20_whole_DCA_range_withhits_cut.C has been generated

@@ -1,0 +1,1386 @@
+nohup: ignoring input
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.10/09                http://root.cern.ch |
+  |                               (c) 1995-2017, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag , 16 October 2017                                 |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+WARNING: AutoLibraryloader::enable() and AutoLibraryLoader.h are deprecated.
+Use FWLiteEnabler::enable() and FWLiteEnabler.h instead
+
+Processing unbinned_fit_test_modified_PbPb_trytomanytimes_4_5_alone_pol2_floatwidth_float.C...
+Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
+[#1] INFO:Eval -- RooAbsReal::attachToTree(mass) TTree Float_t branch mass will be converted to double precision
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(ds) Ignored 632385 out of range events
+RooDataSet::ds[mass] = 3621769 entries
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c1
+begin fitting
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'fit' created with bounds [2.108,2.444]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'NormalizationRangeForfit' created with bounds [2.108,2.444]
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'fit_nll_model_ds' created with bounds [2.108,2.444]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 NumBkg       3.62175e+06  3.62175e+07   -1.81087e+08  1.81087e+08
+ MINUIT WARNING IN PARAM DEF
+ ============== LIMITS ON PARAM1 TOO FAR APART.
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     2 NumSig       8.49900e+03  8.49900e+04   -4.24950e+05  4.24950e+05
+     3 float_width   2.00000e-01  2.00000e-01   -1.00000e+00  1.00000e+00
+     4 mean         2.28893e+00  3.00000e-03    2.27000e+00  2.30000e+00
+     5 p1          -1.44041e-01  2.00000e-01   -1.00000e+00  1.00000e+00
+     6 ratio        8.47506e-01  8.47506e-02     no limits
+ **********
+ **    3 **FIX           6
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     7 width1       6.45082e-03  6.45082e-04     no limits
+ **********
+ **    4 **FIX           7
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     8 width2       1.46427e-02  1.46427e-03     no limits
+ **********
+ **    5 **FIX           8
+ **********
+ **********
+ **    6 **SET ERR         0.5
+ **********
+ **********
+ **    7 **SET PRINT           1
+ **********
+ **********
+ **    8 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    9 **MIGRAD        4000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.26607e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -16620.1
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.95573e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-25119.1, NumSig=8499, float_width=0.2, mean=2.28893, p1=-0.144041, ratio=0.847506, width1=0.00645082, width2=0.0146427
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = -25119.1,NumSig = 8499,float_width = 0.2,mean = 2.28893,p1 = -0.144041,ratio = 0.847506,width1 = 0.00645082,width2 = 0.0146427)
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-19.562392), forcing value to zero @ !refCoefNorm=(mass = 2.28965), !pdfs=(signal = 46.9482/1,back = 0.988294/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28965), !pdfs=(signal = 46.9482/1,back = 0.988294/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     p.d.f value is less than zero (-19.292876), forcing value to zero @ !refCoefNorm=(mass = 2.29034), !pdfs=(signal = 46.416/1,back = 0.987707/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29034), !pdfs=(signal = 46.416/1,back = 0.987707/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     p.d.f value is less than zero (-2.860386), forcing value to zero @ !refCoefNorm=(mass = 2.27637), !pdfs=(signal = 14.387/1,back = 0.999682/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.27637), !pdfs=(signal = 14.387/1,back = 0.999682/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     p.d.f value is less than zero (-13.780905), forcing value to zero @ !refCoefNorm=(mass = 2.29494), !pdfs=(signal = 35.6024/1,back = 0.983765/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29494), !pdfs=(signal = 35.6024/1,back = 0.983765/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     p.d.f value is less than zero (-2.182661), forcing value to zero @ !refCoefNorm=(mass = 2.27584), !pdfs=(signal = 13.0657/1,back = 1.00014/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.27584), !pdfs=(signal = 13.0657/1,back = 1.00014/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     p.d.f value is less than zero (-16.807168), forcing value to zero @ !refCoefNorm=(mass = 2.29296), !pdfs=(signal = 41.5353/1,back = 0.985463/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29296), !pdfs=(signal = 41.5353/1,back = 0.985463/0.336), !coefficients=(NumSig = 8499,NumBkg = -25119.1)
+    ... (remaining 2038 messages suppressed)
+
+ FCN=-5.50315e+07 FROM MIGRAD    STATUS=INITIATE       22 CALLS          23 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       3.62175e+06   3.62175e+07   2.01400e-01  -1.87497e+05
+   2  NumSig       8.49900e+03   8.49900e+04   2.01400e-01   4.80475e+02
+   3  float_width   2.00000e-01   2.00000e-01   2.05758e-01  -3.06409e+01
+   4  mean         2.28893e+00   3.00000e-03   2.09119e-01   1.41564e+01
+   5  p1          -1.44041e-01   2.00000e-01   2.03603e-01  -4.64836e+04
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-5.50324e+07 FROM HESSE     STATUS=OK             39 CALLS         111 TOTAL
+                     EDM=0.089083    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       3.61305e+06   2.06215e+03   5.38519e-05   3.92629e+02
+   2  NumSig       8.70536e+03   8.15047e+02   7.73363e-03   1.09262e+01
+   3  float_width   4.00622e-01   1.70104e-01   5.00000e-01   1.62643e+00
+   4  mean         2.28679e+00   1.09134e-03   3.92836e-01   2.22374e+00
+   5  p1          -1.05554e-01   9.10441e-04   4.67922e-03  -1.53334e+02
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.00215 added to diagonal of error matrix
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.02174e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.45945e+06, NumSig=-388093, float_width=-0.874664, mean=2.29991, p1=-0.360831, ratio=0.847506, width1=0.00645082, width2=0.0146427
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = 4.45945e+06,NumSig = -388093,float_width = -0.874664,mean = 2.29991,p1 = -0.360831,ratio = 0.847506,width1 = 0.00645082,width2 = 0.0146427)
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-0.079947), forcing value to zero @ !refCoefNorm=(mass = 2.29784), !pdfs=(signal = 33.433/1,back = 0.953093/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29784), !pdfs=(signal = 33.433/1,back = 0.953093/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     p.d.f value is less than zero (-24.657746), forcing value to zero @ !refCoefNorm=(mass = 2.29912), !pdfs=(signal = 291.176/1,back = 0.950338/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29912), !pdfs=(signal = 291.176/1,back = 0.950338/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     p.d.f value is less than zero (-39.383419), forcing value to zero @ !refCoefNorm=(mass = 2.30004), !pdfs=(signal = 445.591/1,back = 0.948365/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.30004), !pdfs=(signal = 445.591/1,back = 0.948365/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     p.d.f value is less than zero (-31.042739), forcing value to zero @ !refCoefNorm=(mass = 2.30048), !pdfs=(signal = 358.06/1,back = 0.947429/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.30048), !pdfs=(signal = 358.06/1,back = 0.947429/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     p.d.f value is less than zero (-39.302362), forcing value to zero @ !refCoefNorm=(mass = 2.29976), !pdfs=(signal = 444.761/1,back = 0.948958/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29976), !pdfs=(signal = 444.761/1,back = 0.948958/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     p.d.f value is less than zero (-9.956186), forcing value to zero @ !refCoefNorm=(mass = 2.30122), !pdfs=(signal = 136.793/1,back = 0.945824/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.30122), !pdfs=(signal = 136.793/1,back = 0.945824/0.336), !coefficients=(NumSig = -388093,NumBkg = 4.45945e+06)
+    ... (remaining 2038 messages suppressed)
+
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-5.50324e+07 FROM MIGRAD    STATUS=FAILED        196 CALLS         197 TOTAL
+                     EDM=246.773    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  45.8 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       3.61325e+06   1.02545e+05   0.00000e+00  -7.35397e+02
+   2  NumSig       8.49866e+03   3.60649e+03   0.00000e+00  -1.45357e+01
+   3  float_width   3.44685e-01   6.09803e-01   0.00000e+00  -7.53784e+00
+   4  mean         2.28659e+00   9.72396e-03   0.00000e+00  -2.19257e+00
+   5  p1          -1.05397e-01   1.54031e-03  -0.00000e+00   1.25228e+01
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  5    ERR DEF=0.5
+  1.052e+10 -2.081e+08 -1.615e+03  1.086e+03 -1.257e+02 
+ -2.081e+08  1.301e+07  1.963e+03 -2.076e+01  1.863e+00 
+ -1.615e+03  1.963e+03  4.406e-01 -8.064e-06 -1.173e-04 
+  1.086e+03 -2.076e+01 -8.064e-06  1.122e-04 -1.303e-05 
+ -1.257e+02  1.863e+00 -1.173e-04 -1.303e-05  2.373e-06 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5
+        1  0.99983   1.000 -0.563 -0.024  1.000 -0.796
+        2  0.98494  -0.563  1.000  0.820 -0.543  0.335
+        3  0.97636  -0.024  0.820  1.000 -0.001 -0.115
+        4  0.99982   1.000 -0.543 -0.001  1.000 -0.799
+        5  0.80759  -0.796  0.335 -0.115 -0.799  1.000
+ ERR MATRIX APPROXIMATE
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   10 **SET ERR         0.5
+ **********
+ **********
+ **   11 **SET PRINT           1
+ **********
+ **********
+ **   12 **HESSE        4000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-5.50324e+07 FROM HESSE     STATUS=OK             39 CALLS         236 TOTAL
+                     EDM=0.0215769    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  NumBkg       3.61325e+06   2.05189e+03   5.38444e-05   1.99544e-02
+   2  NumSig       8.49866e+03   7.87770e+02   7.48152e-03   2.00005e-02
+   3  float_width   3.44685e-01   1.56183e-01   5.00000e-01   3.51903e-01
+   4  mean         2.28659e+00   1.02413e-03   3.36639e-01   1.06316e-01
+   5  p1          -1.05397e-01   9.10181e-04   4.67933e-03  -1.05593e-01
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  5    ERR DEF=0.5
+  4.210e+06 -6.044e+05 -6.491e+01  2.678e-02  3.080e-02 
+ -6.044e+05  6.206e+05  6.602e+01 -2.645e-02 -3.121e-02 
+ -6.491e+01  6.602e+01  2.462e-02  3.605e-05 -5.006e-06 
+  2.678e-02 -2.645e-02  3.605e-05  1.051e-06 -4.118e-08 
+  3.080e-02 -3.121e-02 -5.006e-06 -4.118e-08  8.284e-07 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5
+        1  0.37393   1.000 -0.374 -0.202  0.013  0.016
+        2  0.61610  -0.374  1.000  0.534 -0.033 -0.044
+        3  0.58628  -0.202  0.534  1.000  0.224 -0.035
+        4  0.29069   0.013 -0.033  0.224  1.000 -0.044
+        5  0.06305   0.016 -0.044 -0.035 -0.044  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   13 **MINOS        4000           1
+ **********
+ FUNCTION MUST BE MINIMIZED BEFORE CALLING MINOs     
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 5.00e-05
+ FCN=-5.50324e+07 FROM MIGRAD    STATUS=INITIATE       10 CALLS         246 TOTAL
+                     EDM=0.00416212    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       3.61325e+06   2.05189e+03   5.38444e-05  -3.67835e+02
+   2  NumSig       8.49866e+03   7.87770e+02   7.48152e-03  -4.63783e+00
+   3  float_width   3.44685e-01   1.56183e-01   5.00000e-01  -2.28376e-01
+   4  mean         2.28659e+00   1.02413e-03   3.36639e-01  -1.03790e+00
+   5  p1          -1.05397e-01   9.10181e-04   4.67933e-03   1.25228e+01
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=-5.50324e+07 FROM MIGRAD    STATUS=CONVERGED      21 CALLS         257 TOTAL
+                     EDM=0.00416212    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       3.61325e+06   2.05189e+03  -0.00000e+00  -3.67835e+02
+   2  NumSig       8.49866e+03   7.87770e+02   0.00000e+00  -4.63783e+00
+   3  float_width   3.44685e-01   1.56183e-01   0.00000e+00  -2.28376e-01
+   4  mean         2.28659e+00   1.02413e-03   0.00000e+00  -1.03790e+00
+   5  p1          -1.05397e-01   9.10181e-04  -0.00000e+00   1.25228e+01
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  5    ERR DEF=0.5
+  4.210e+06 -6.044e+05 -6.491e+01  2.678e-02  3.080e-02 
+ -6.044e+05  6.206e+05  6.602e+01 -2.645e-02 -3.121e-02 
+ -6.491e+01  6.602e+01  2.462e-02  3.605e-05 -5.006e-06 
+  2.678e-02 -2.645e-02  3.605e-05  1.051e-06 -4.118e-08 
+  3.080e-02 -3.121e-02 -5.006e-06 -4.118e-08  8.284e-07 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5
+        1  0.37393   1.000 -0.374 -0.202  0.013  0.016
+        2  0.61610  -0.374  1.000  0.534 -0.033 -0.044
+        3  0.58628  -0.202  0.534  1.000  0.224 -0.035
+        4  0.29069   0.013 -0.033  0.224  1.000 -0.044
+        5  0.06305   0.016 -0.044 -0.035 -0.044  1.000
+ FCN=-5.50324e+07 FROM MINOS     STATUS=SUCCESSFUL    145 CALLS         402 TOTAL
+                     EDM=0.00416212    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       3.61325e+06   2.05189e+03  -2.03493e+03   2.16212e+03
+   2  NumSig       8.49866e+03   7.87770e+02                            
+   3  float_width   3.44685e-01   1.56183e-01                            
+   4  mean         2.28659e+00   1.02413e-03                            
+   5  p1          -1.05397e-01   9.10181e-04                            
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   14 **MINOS        4000           2
+ **********
+ FCN=-5.50324e+07 FROM MINOS     STATUS=SUCCESSFUL    197 CALLS         599 TOTAL
+                     EDM=0.00416212    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       3.61325e+06   2.05189e+03  -2.03493e+03   2.16212e+03
+   2  NumSig       8.49866e+03   7.87770e+02  -9.35694e+02   9.07160e+02
+   3  float_width   3.44685e-01   1.56183e-01                            
+   4  mean         2.28659e+00   1.02413e-03                            
+   5  p1          -1.05397e-01   9.10181e-04                            
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   15 **MINOS        4000           3
+ **********
+ FCN=-5.50324e+07 FROM MINOS     STATUS=SUCCESSFUL    251 CALLS         850 TOTAL
+                     EDM=0.00416212    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       3.61325e+06   2.05189e+03  -2.03493e+03   2.16212e+03
+   2  NumSig       8.49866e+03   7.87770e+02  -9.35694e+02   9.07160e+02
+   3  float_width   3.44685e-01   1.56183e-01  -2.56811e-01   1.93793e-01
+   4  mean         2.28659e+00   1.02413e-03                            
+   5  p1          -1.05397e-01   9.10181e-04                            
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   16 **MINOS        4000           4
+ **********
+ FCN=-5.50324e+07 FROM MINOS     STATUS=SUCCESSFUL    132 CALLS         982 TOTAL
+                     EDM=0.00416212    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       3.61325e+06   2.05189e+03  -2.03493e+03   2.16212e+03
+   2  NumSig       8.49866e+03   7.87770e+02  -9.35694e+02   9.07160e+02
+   3  float_width   3.44685e-01   1.56183e-01  -2.56811e-01   1.93793e-01
+   4  mean         2.28659e+00   1.02413e-03  -8.76919e-04   9.51457e-04
+   5  p1          -1.05397e-01   9.10181e-04                            
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   17 **MINOS        4000           5
+ **********
+ FCN=-5.50324e+07 FROM MINOS     STATUS=SUCCESSFUL     80 CALLS        1062 TOTAL
+                     EDM=0.00416212    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       3.61325e+06   2.05189e+03  -2.03493e+03   2.16212e+03
+   2  NumSig       8.49866e+03   7.87770e+02  -9.35694e+02   9.07160e+02
+   3  float_width   3.44685e-01   1.56183e-01  -2.56811e-01   1.93793e-01
+   4  mean         2.28659e+00   1.02413e-03  -8.76919e-04   9.51457e-04
+   5  p1          -1.05397e-01   9.10181e-04  -9.18232e-04   9.02989e-04
+   6  ratio        8.47506e-01     fixed    
+   7  width1       6.45082e-03     fixed    
+   8  width2       1.46427e-02     fixed    
+                               ERR DEF= 0.5
+Info in <TMinuitMinimizer::GetMinosError>: Parameter ratio is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width1 is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width2 is fixed. There are no Minos error to calculate. Ignored.
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'full'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_ds'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_ds'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_ds'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (back)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+a:  8499
+
+  RooFitResult: minimized FCN value: -5.50324e+07, estimated distance to minimum: 0.0215769
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=-1 HESSE=4 MINOS=4 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                NumBkg    3.6132e+06 +/-  2.05e+03
+                NumSig    8.4987e+03 +/-  7.88e+02
+           float_width    3.4468e-01 +/-  1.56e-01
+                  mean    2.2866e+00 +/-  1.02e-03
+                    p1   -1.0540e-01 +/-  9.10e-04
+                 ratio    8.4751e-01 +/-  0.00e+00
+                width1    6.4508e-03 +/-  0.00e+00
+                width2    1.4643e-02 +/-  0.00e+00
+
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooAddPdf::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooAddPdf::signal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooGaussian::sigma1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mass
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mean
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooFormulaVar::scale width1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::float_width
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::ratio
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooGaussian::sigma2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooFormulaVar::scale width2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::width2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::NumSig
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooChebychev::back
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::NumBkg
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named mean: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named width1: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named width2: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named ratio: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named scale width1: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named scale width2: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named float_width: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named NumSig: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(w) ERROR importing object named NumBkg: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset ds
+
+RooWorkspace(w) workspace contents
+
+variables
+---------
+(NumBkg,NumSig,float_width,mass,mean,p1,ratio,width1,width2)
+
+p.d.f.s
+-------
+RooChebychev::back[ x=mass coefList=(p1) ] = 1
+RooAddPdf::model[ NumSig * signal + NumBkg * back ] = 0.998907
+RooGaussian::sigma1[ x=mass mean=mean sigma=scale width1 ] = 0.474509
+RooGaussian::sigma2[ x=mass mean=mean sigma=scale width2 ] = 0.865296
+RooAddPdf::signal[ ratio * sigma1 + [%] * sigma2 ] = 0.534101
+
+functions
+--------
+RooFormulaVar::scale width1[ actualVars=(width1,float_width) formula="width1*(1+float_width)" ] = 0.00867432
+RooFormulaVar::scale width2[ actualVars=(width2,float_width) formula="width2*(1+float_width)" ] = 0.0196899
+
+datasets
+--------
+RooDataSet::ds(mass)
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 99
+RooMCStudy: now generating 3621742 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 98
+RooMCStudy: now generating 3620657 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.53261e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.43524e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.34889e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -4.16852e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.45414e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -4.19946e+06
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 97
+RooMCStudy: now generating 3621177 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.62873e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -8.64145e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.04581e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 96
+RooMCStudy: now generating 3618078 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.33263e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 95
+RooMCStudy: now generating 3620806 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.36565e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -4.29519e+06
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 94
+RooMCStudy: now generating 3620820 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -4.31769e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.54325e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.36372e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.3276e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.08e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.37115e+06, NumSig=-342497, float_width=0.476071, mean=2.28616, p1=-0.0294114, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID16101/RooRealMPFE::nll_model_modelData_6054540_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 93
+RooMCStudy: now generating 3620866 events
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (7.97195e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=5.04071e+06, NumSig=-205901, float_width=-0.912397, mean=2.29883, p1=0.618413, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID1722/RooRealMPFE::nll_model_modelData_5f97ea0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (7.97195e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.6847e+06, NumSig=-345868, float_width=0.551222, mean=2.28641, p1=-0.568512, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID1722/RooRealMPFE::nll_model_modelData_5f97ea0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (7.97195e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=7.00541e+06, NumSig=-336694, float_width=-0.947638, mean=2.29918, p1=-0.504133, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID1722/RooRealMPFE::nll_model_modelData_5f97ea0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 92
+RooMCStudy: now generating 3623496 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 91
+RooMCStudy: now generating 3622678 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 90
+RooMCStudy: now generating 3621975 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.8034e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.43698e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.19486e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.88824e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.63069e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -234745
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.08191e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-269428, NumSig=34682.6, float_width=0.998441, mean=2.28479, p1=0.124882, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID28773/RooRealMPFE::nll_model_modelData_605f2c0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.38708e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.08191e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=1.86116e+07, NumSig=-388419, float_width=-0.726592, mean=2.29808, p1=0.189714, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID28773/RooRealMPFE::nll_model_modelData_605f2c0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 89
+RooMCStudy: now generating 3620313 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 88
+RooMCStudy: now generating 3620065 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.21511e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (8.72102e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.07782e+06, NumSig=-381582, float_width=0.574692, mean=2.28822, p1=-0.230567, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID9748/RooRealMPFE::nll_model_modelData_605f2c0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (8.72102e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.36833e+06, NumSig=-415562, float_width=0.159193, mean=2.29908, p1=-0.962135, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID9748/RooRealMPFE::nll_model_modelData_605f2c0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 87
+RooMCStudy: now generating 3618043 events
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-5.49722e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=8.05482e+07, NumSig=-140091, float_width=-0.986612, mean=2.29878, p1=0.336432, ratio=0.847506, width1=0.00645082, width2=0.0146427
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+PID22611/RooRealMPFE::nll_model_modelData_5ffcd80_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.78064e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.39532e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (8.14274e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=1.9873e+06, NumSig=-283175, float_width=-0.986603, mean=2.29886, p1=0.338193, ratio=0.847506, width1=0.00645082, width2=0.0146427
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+PID22611/RooRealMPFE::nll_model_modelData_5ffcd80_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 86
+RooMCStudy: now generating 3623978 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.81531e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.74371e+06
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 85
+RooMCStudy: now generating 3622115 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.48594e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.10282e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.04353e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.94017e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.03371e+06
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 84
+RooMCStudy: now generating 3625855 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 83
+RooMCStudy: now generating 3622905 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 82
+RooMCStudy: now generating 3621099 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.11146e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.39869e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -4.25282e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.61902e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -6.57553e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.35518e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.05715e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 81
+RooMCStudy: now generating 3618858 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.69059e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.39692e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -7.17666e+06
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 80
+RooMCStudy: now generating 3622567 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.73828e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.55739e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.8105e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.52735e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.64479e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.15363e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.23983e+06, NumSig=-423435, float_width=0.643774, mean=2.28615, p1=0.292526, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID26802/RooRealMPFE::nll_model_modelData_604da50_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 79
+RooMCStudy: now generating 3621261 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 78
+RooMCStudy: now generating 3619868 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.01067e+08
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 77
+RooMCStudy: now generating 3621095 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.40857e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.80415e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -6.68468e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.66161e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.92446e+06, NumSig=-296286, float_width=0.0978293, mean=2.29969, p1=0.994837, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID27440/RooRealMPFE::nll_model_modelData_611e5e0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 76
+RooMCStudy: now generating 3622362 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.86011e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-5.50421e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-5.86792e+07, NumSig=78107, float_width=-0.996269, mean=2.29222, p1=-0.041698, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID39277/RooRealMPFE::nll_model_modelData_611e5e0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 4288 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 75
+RooMCStudy: now generating 3621712 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 74
+RooMCStudy: now generating 3621975 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.28727e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6.8731e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.73707e+06, NumSig=-192163, float_width=-0.57133, mean=2.29785, p1=0.374562, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID23677/RooRealMPFE::nll_model_modelData_611e5e0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 73
+RooMCStudy: now generating 3622403 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 72
+RooMCStudy: now generating 3623035 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.6578e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -7.02947e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.08047e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=2.04581e+06, NumSig=-250576, float_width=0.982816, mean=2.29361, p1=-0.675744, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID1989/RooRealMPFE::nll_model_modelData_611e5e0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 71
+RooMCStudy: now generating 3622764 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 70
+RooMCStudy: now generating 3618469 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.79894e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -6.51556e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 69
+RooMCStudy: now generating 3620179 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 68
+RooMCStudy: now generating 3619308 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 67
+RooMCStudy: now generating 3621118 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 66
+RooMCStudy: now generating 3620074 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.70921e+08
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (4.01346e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.15961e+06, NumSig=-399827, float_width=0.152945, mean=2.29688, p1=0.993056, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID4575/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (4.01346e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.94755e+06, NumSig=-375835, float_width=0.143858, mean=2.29691, p1=-0.515958, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID4575/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 65
+RooMCStudy: now generating 3622612 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.09631e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.0714e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.9235e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 64
+RooMCStudy: now generating 3620222 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.66381e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.46745e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6.21469e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.55194e+06, NumSig=-327706, float_width=-0.668858, mean=2.29995, p1=0.426305, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID12868/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 63
+RooMCStudy: now generating 3621097 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.84182e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.32478e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 62
+RooMCStudy: now generating 3620843 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 61
+RooMCStudy: now generating 3623358 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.21486e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.37568e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.71507e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -7.82061e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.18826e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=1.71539e+06, NumSig=-403638, float_width=-0.902045, mean=2.29842, p1=-0.971105, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID23619/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 60
+RooMCStudy: now generating 3620524 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -7.55307e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.10465e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 59
+RooMCStudy: now generating 3620841 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.7415e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.41685e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.4921e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.32727e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.9318e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.12761e+06, NumSig=-398172, float_width=0.533518, mean=2.28712, p1=-0.327459, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID33654/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 58
+RooMCStudy: now generating 3624662 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 57
+RooMCStudy: now generating 3622232 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 56
+RooMCStudy: now generating 3621706 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 55
+RooMCStudy: now generating 3624676 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 54
+RooMCStudy: now generating 3622425 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.49229e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -7.12784e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.12869e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.01428e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.07825e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-1.05011e+07, NumSig=358323, float_width=-0.659001, mean=2.27975, p1=-0.665898, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID13571/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.76801e+06
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 53
+RooMCStudy: now generating 3621866 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 52
+RooMCStudy: now generating 3623671 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 51
+RooMCStudy: now generating 3619296 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.02421e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (3.03276e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.64283e+06, NumSig=-277891, float_width=-0.964286, mean=2.29908, p1=-0.0298838, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID27360/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 50
+RooMCStudy: now generating 3621904 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.03105e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.89831e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 49
+RooMCStudy: now generating 3618486 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 48
+RooMCStudy: now generating 3619313 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -7.67573e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.71947e+08
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 47
+RooMCStudy: now generating 3620936 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 46
+RooMCStudy: now generating 3620864 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -6.27681e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.35427e+06
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 45
+RooMCStudy: now generating 3619600 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -7.4208e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.6456e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (3.51437e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=7.00062e+06, NumSig=-401365, float_width=-0.949028, mean=2.29906, p1=-0.627876, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID12309/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (3.51437e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.70063e+06, NumSig=-219565, float_width=-0.963388, mean=2.29908, p1=0.384965, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID12309/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 44
+RooMCStudy: now generating 3623133 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.42842e+08
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-5.50546e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-1.42971e+08, NumSig=129214, float_width=-0.986311, mean=2.29858, p1=-0.822981, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID16267/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 6468 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.69434e+08
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 43
+RooMCStudy: now generating 3618336 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 42
+RooMCStudy: now generating 3621133 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.49549e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -7.0693e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-2.72016e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=223054, NumSig=-87122.2, float_width=0.451782, mean=2.28738, p1=0.281505, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID24447/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.49407e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 41
+RooMCStudy: now generating 3621768 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.75221e+08
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 40
+RooMCStudy: now generating 3626273 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -7.79662e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 39
+RooMCStudy: now generating 3620641 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 38
+RooMCStudy: now generating 3618639 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 37
+RooMCStudy: now generating 3621589 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 36
+RooMCStudy: now generating 3620145 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 35
+RooMCStudy: now generating 3621237 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 34
+RooMCStudy: now generating 3620078 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 33
+RooMCStudy: now generating 3624705 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.71073e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.58792e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.53022e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (7.8439e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.81195e+06, NumSig=-116042, float_width=-0.793499, mean=2.29968, p1=0.989159, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID31339/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 32
+RooMCStudy: now generating 3621718 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.35855e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.35821e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.56011e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.95893e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.86472e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=6.93446e+06, NumSig=-424908, float_width=-0.479003, mean=2.29419, p1=0.282733, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID36654/RooRealMPFE::nll_model_modelData_6ee70f0_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 31
+RooMCStudy: now generating 3620237 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.7733e+08
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.02836e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.36148e+06, NumSig=-412126, float_width=-0.00542114, mean=2.29859, p1=-0.669137, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID767/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.02836e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.86617e+06, NumSig=-226096, float_width=-0.0183167, mean=2.2986, p1=0.507364, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID767/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 30
+RooMCStudy: now generating 3622049 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.7393e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.79399e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.51894e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.56745e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.03688e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.20988e+06, NumSig=-419672, float_width=0.619921, mean=2.28746, p1=-0.401821, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID6100/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.80914e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.49963e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.03688e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=1.47402e+07, NumSig=-216971, float_width=-0.923217, mean=2.29993, p1=-0.712186, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID6100/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.03688e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.67406e+06, NumSig=-306467, float_width=0.371492, mean=2.29979, p1=0.98038, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID6100/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 29
+RooMCStudy: now generating 3622144 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.1258e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -4.20016e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6.28269e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-4.56071e+06, NumSig=360550, float_width=-0.868134, mean=2.29704, p1=-0.0955113, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID16319/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 28
+RooMCStudy: now generating 3622448 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.71072e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.63217e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.80501e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=2.15595e+06, NumSig=-131582, float_width=-0.882407, mean=2.29845, p1=0.392366, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID23095/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 27
+RooMCStudy: now generating 3621163 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.52378e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.78744e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.66784e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.44388e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.9996e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.07268e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.27443e+06, NumSig=-424949, float_width=0.53517, mean=2.28811, p1=-0.984292, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID27810/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 26
+RooMCStudy: now generating 3625328 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 25
+RooMCStudy: now generating 3625682 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.77778e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -6.15545e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.18157e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 24
+RooMCStudy: now generating 3617852 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.5793e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -4.14398e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6.02675e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=1.13629e+07, NumSig=-118084, float_width=-0.975982, mean=2.29998, p1=-0.230555, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID5271/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 30020 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6.02675e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.99792e+06, NumSig=-372343, float_width=0.571074, mean=2.28714, p1=-0.111479, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID5271/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6.02675e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.87948e+06, NumSig=-34058.9, float_width=-0.917335, mean=2.29978, p1=0.994409, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID5271/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 23
+RooMCStudy: now generating 3623116 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 22
+RooMCStudy: now generating 3621516 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 21
+RooMCStudy: now generating 3622152 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 20
+RooMCStudy: now generating 3619806 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -7.58996e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.74371e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.68033e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.67895e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -329784
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.0548e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-451049, NumSig=121265, float_width=0.897001, mean=2.29481, p1=0.640362, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID23185/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 19
+RooMCStudy: now generating 3619616 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.44764e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.76854e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.80785e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -6.56421e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.78118e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (4.92401e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=2.01434e+06, NumSig=-275616, float_width=0.585665, mean=2.28683, p1=-0.92536, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID27160/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -9.46168e+06
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 18
+RooMCStudy: now generating 3621577 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 17
+RooMCStudy: now generating 3625483 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.3897e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.30584e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -4.43419e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 16
+RooMCStudy: now generating 3623797 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -6.75303e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.06647e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=1.83641e+06, NumSig=-397548, float_width=0.450943, mean=2.27538, p1=0.474055, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID40259/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 15
+RooMCStudy: now generating 3623247 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 14
+RooMCStudy: now generating 3619523 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.47432e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.30691e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.76985e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.67393e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=7.32428e+06, NumSig=-379157, float_width=-0.309993, mean=2.29998, p1=0.060644, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID10975/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32768 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 13
+RooMCStudy: now generating 3618630 events
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.08334e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.88129e+06, NumSig=-257824, float_width=-0.987281, mean=2.29101, p1=0.947316, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID28267/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32216 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.08334e+08) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=3.85478e+06, NumSig=-236452, float_width=-0.986923, mean=2.29094, p1=-0.113068, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID28267/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 32704 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 12
+RooMCStudy: now generating 3620989 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 11
+RooMCStudy: now generating 3620796 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 10
+RooMCStudy: now generating 3619821 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 9
+RooMCStudy: now generating 3620753 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.58009e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.80597e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.15557e+07
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.8474e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=8.78483e+06, NumSig=-304963, float_width=-0.994867, mean=2.29028, p1=-0.7185, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID14320/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 8
+RooMCStudy: now generating 3624713 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 7
+RooMCStudy: now generating 3624842 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.69583e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -6.30738e+07
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 6
+RooMCStudy: now generating 3618842 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 5
+RooMCStudy: now generating 3622871 events
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 4
+RooMCStudy: now generating 3621862 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.72087e+08
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 3
+RooMCStudy: now generating 3623373 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.34059e+07
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.46798e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.1927e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -3.06772e+06
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 2
+RooMCStudy: now generating 3625729 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.79677e+08
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-5.50967e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-1.79961e+08, NumSig=283395, float_width=-0.999553, mean=2.29614, p1=-0.6546, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID6852/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.31587e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.09718e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.0841e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -2.36662e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.24929e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=4.59805e+06, NumSig=-321676, float_width=-0.999014, mean=2.29629, p1=-0.149909, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID6852/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 1
+RooMCStudy: now generating 3620575 events
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.54086e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.55205e+08
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -5.88173e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (9.23934e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=1.9346e+06, NumSig=-314044, float_width=-0.496841, mean=2.29169, p1=0.500929, ratio=0.847506, width1=0.00645082, width2=0.0146427
+PID11508/RooRealMPFE::nll_model_modelData_60f2030_MPFE7[ arg=nll_model_modelData_GOF7 vars=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 16 errors
+RooNLLVar::nll_model_modelData[ paramSet=(NumBkg,NumSig,float_width,mean,p1,ratio,width1,width2) ] has 1 errors
+
+[#0] PROGRESS:Generation -- RooMCStudy::run: sample 0
+RooMCStudy: now generating 3620082 events
+
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(ratiopull) evaluation error, 
+ origin       : RooPullVar::ratiopull[ meas=ratio true=truth ]
+ message      : function value is NAN
+ server values: meas=ratio=0.847506 +/- 0, true=truth=0.847506 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width1pull) evaluation error, 
+ origin       : RooPullVar::width1pull[ meas=width1 true=truth ]
+ message      : function value is NAN
+ server values: meas=width1=0.00645082 +/- 0, true=truth=0.00645082 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(width2pull) evaluation error, 
+ origin       : RooPullVar::width2pull[ meas=width2 true=truth ]
+ message      : function value is NAN
+ server values: meas=width2=0.0146427 +/- 0, true=truth=0.0146427 +/- 0
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pullGauss_Int[NumSigpull]) using numeric integrator RooIntegrator1D to calculate Int(NumSigpull)
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pullGauss_Int[NumSigpull]) using numeric integrator RooIntegrator1D to calculate Int(NumSigpull)
+Warning in <TROOT::Append>: Replacing existing TH1: ds (Potential memory leak).
+Warning in <TROOT::Append>: Replacing existing TH1: ds (Potential memory leak).
+Info in <TCanvas::Print>: pdf file /scratch/halstead/x/xiao147/2017_pp_fullproduction_03112020_2/signal_extraction/pp_nopartMB3_noMB7_toyMC/2gaus_pol3_pp/0605_BDTG_3_100_pp_unifom_toyMC/pp_4_5_whole_DCA_range_withhits_pol1_default.pdf has been created
+Info in <TCanvas::SaveSource>: C++ Macro file: /scratch/halstead/x/xiao147/2017_pp_fullproduction_03112020_2/signal_extraction/pp_nopartMB3_noMB7_toyMC/2gaus_pol3_pp/0605_BDTG_3_100_pp_unifom_toyMC/pp_4_5_whole_DCA_range_withhits_pol1_default.C has been generated

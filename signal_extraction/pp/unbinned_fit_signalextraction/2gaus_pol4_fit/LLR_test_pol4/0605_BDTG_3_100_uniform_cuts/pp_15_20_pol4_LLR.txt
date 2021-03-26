@@ -1,0 +1,1195 @@
+nohup: ignoring input
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.10/09                http://root.cern.ch |
+  |                               (c) 1995-2017, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag , 16 October 2017                                 |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+WARNING: AutoLibraryloader::enable() and AutoLibraryLoader.h are deprecated.
+Use FWLiteEnabler::enable() and FWLiteEnabler.h instead
+
+Processing unbinned_fit_test_modified_PbPb_trytomanytimes_15_20_pol2.C...
+Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
+[#1] INFO:Eval -- RooAbsReal::attachToTree(mass) TTree Float_t branch mass will be converted to double precision
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(ds) Ignored 6931 out of range events
+RooDataSet::ds[mass] = 53466 entries
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c1
+begin fitting
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'fit' created with bounds [2.108,2.444]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'NormalizationRangeForfit' created with bounds [2.1,2.444]
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'fit_nll_model_ds' created with bounds [2.108,2.444]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 NumBkg       5.34660e+04  5.34660e+05   -2.67330e+06  2.67330e+06
+     2 NumSig       6.00000e+02  6.00000e+03   -3.00000e+04  3.00000e+04
+     3 float_width   0.00000e+00  1.00000e-01   -5.00000e-01  5.00000e-01
+     4 mean         2.28787e+00  1.50000e-02    2.21000e+00  2.36000e+00
+     5 p1           0.00000e+00  2.00000e-01   -1.00000e+00  1.00000e+00
+     6 p2           0.00000e+00  2.00000e-01   -1.00000e+00  1.00000e+00
+     7 p3           0.00000e+00  2.00000e-01   -1.00000e+00  1.00000e+00
+     8 p4           0.00000e+00  2.00000e-01   -1.00000e+00  1.00000e+00
+     9 ratio        8.64574e-01  8.64574e-02     no limits
+ **********
+ **    3 **FIX           9
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+    10 width1       6.68920e-03  6.68920e-04     no limits
+ **********
+ **    4 **FIX          10
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+    11 width2       1.81433e-02  1.81433e-03     no limits
+ **********
+ **    5 **FIX          11
+ **********
+ **********
+ **    6 **SET ERR         0.5
+ **********
+ **********
+ **    7 **SET PRINT           1
+ **********
+ **********
+ **    8 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    9 **MIGRAD        5500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -141484
+ FCN=-573042 FROM MIGRAD    STATUS=INITIATE       36 CALLS          37 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       5.34660e+04   5.34660e+05   2.01400e-01   2.41635e+04
+   2  NumSig       6.00000e+02   6.00000e+03   2.01400e-01   5.88311e+02
+   3  float_width   0.00000e+00   1.00000e-01   2.01358e-01  -7.96507e+00
+   4  mean         2.28787e+00   1.50000e-02   2.01514e-01   1.33086e+02
+   5  p1           0.00000e+00   2.00000e-01   2.01358e-01   2.89997e+03
+   6  p2           0.00000e+00   2.00000e-01   2.01358e-01   1.08933e+03
+   7  p3           0.00000e+00   2.00000e-01   2.01358e-01  -2.15682e+03
+   8  p4           0.00000e+00   2.00000e-01   2.01358e-01  -5.58421e+02
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=-573331 FROM MIGRAD    STATUS=CONVERGED     178 CALLS         179 TOTAL
+                     EDM=0.00010301    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   4.8 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       5.31368e+04   2.51716e+02   0.00000e+00  -8.94453e+01
+   2  NumSig       5.13242e+02   8.23836e+01  -0.00000e+00   2.36568e+00
+   3  float_width   2.74256e-01   1.18679e-01   0.00000e+00  -2.04405e-02
+   4  mean         2.28570e+00   1.69273e-03  -0.00000e+00   1.46341e-01
+   5  p1          -1.63890e-01   9.62883e-03   0.00000e+00  -1.21006e-02
+   6  p2          -5.04116e-02   1.00776e-02  -0.00000e+00   3.53127e-01
+   7  p3           1.27185e-02   8.05636e-03   0.00000e+00  -3.46609e-01
+   8  p4           6.58203e-03   8.43482e-03   0.00000e+00  -4.69158e-01
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  6.336e+04 -6.940e+03  9.039e+00  1.496e-02 -2.653e-01  2.311e-01 -2.931e-01  4.478e-01 
+ -6.940e+03  6.787e+03 -2.450e+00 -2.419e-02 -1.827e-03  6.610e-02  3.929e-02 -2.104e-01 
+  9.039e+00 -2.450e+00  1.448e-02  2.206e-05 -1.333e-04  1.576e-04 -1.508e-04  3.046e-04 
+  1.496e-02 -2.419e-02  2.206e-05  2.866e-06 -6.438e-08 -1.080e-06  3.327e-07  8.988e-07 
+ -2.653e-01 -1.827e-03 -1.333e-04 -6.438e-08  9.272e-05 -2.713e-05  4.551e-05 -1.505e-05 
+  2.311e-01  6.610e-02  1.576e-04 -1.080e-06 -2.713e-05  1.016e-04 -2.622e-05  4.541e-05 
+ -2.931e-01  3.929e-02 -1.508e-04  3.327e-07  4.551e-05 -2.622e-05  6.491e-05 -1.840e-05 
+  4.478e-01 -2.104e-01  3.046e-04  8.988e-07 -1.505e-05  4.541e-05 -1.840e-05  7.115e-05 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.41937   1.000 -0.335  0.298  0.035 -0.109  0.091 -0.145  0.211
+        2  0.51689  -0.335  1.000 -0.247 -0.173 -0.002  0.080  0.059 -0.303
+        3  0.40848   0.298 -0.247  1.000  0.108 -0.115  0.130 -0.156  0.300
+        4  0.20726   0.035 -0.173  0.108  1.000 -0.004 -0.063  0.024  0.063
+        5  0.59692  -0.109 -0.002 -0.115 -0.004  1.000 -0.280  0.587 -0.185
+        6  0.62596   0.091  0.080  0.130 -0.063 -0.280  1.000 -0.323  0.534
+        7  0.62130  -0.145  0.059 -0.156  0.024  0.587 -0.323  1.000 -0.271
+        8  0.65705   0.211 -0.303  0.300  0.063 -0.185  0.534 -0.271  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   10 **SET ERR         0.5
+ **********
+ **********
+ **   11 **SET PRINT           1
+ **********
+ **********
+ **   12 **HESSE        5500
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-573331 FROM HESSE     STATUS=OK             73 CALLS         252 TOTAL
+                     EDM=0.0119057    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  NumBkg       5.31368e+04   2.65229e+02   4.58829e-05   1.98782e-02
+   2  NumSig       5.13242e+02   1.17860e+02   1.36218e-03   1.71089e-02
+   3  float_width   2.74256e-01   2.75054e-01   2.97608e-01   5.80585e-01
+   4  mean         2.28570e+00   1.93042e-03   1.31682e-02   9.38497e-03
+   5  p1          -1.63890e-01   9.64706e-03   4.07455e-03  -1.64632e-01
+   6  p2          -5.04116e-02   1.01396e-02   4.11444e-03  -5.04329e-02
+   7  p3           1.27185e-02   8.35273e-03   3.34818e-03   1.27189e-02
+   8  p4           6.58203e-03   8.87658e-03   3.35329e-03   6.58208e-03
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  7.035e+04 -1.406e+04 -2.177e+01 -1.402e-02 -2.772e-01  1.395e-01 -3.828e-01  6.478e-01 
+ -1.406e+04  1.389e+04  2.087e+01  1.203e-02  5.386e-02  1.228e-01  1.887e-01 -4.537e-01 
+ -2.177e+01  2.087e+01  9.012e-02  9.571e-05  7.235e-05  2.191e-04  3.023e-04 -6.311e-04 
+ -1.402e-02  1.203e-02  9.571e-05  3.727e-06  3.107e-07  1.847e-08  1.484e-06 -3.908e-08 
+ -2.772e-01  5.386e-02  7.235e-05  3.107e-07  9.307e-05 -2.869e-05  4.747e-05 -1.767e-05 
+  1.395e-01  1.228e-01  2.191e-04  1.847e-08 -2.869e-05  1.028e-04 -2.630e-05  4.364e-05 
+ -3.828e-01  1.887e-01  3.023e-04  1.484e-06  4.747e-05 -2.630e-05  6.977e-05 -2.402e-05 
+  6.478e-01 -4.537e-01 -6.311e-04 -3.908e-08 -1.767e-05  4.364e-05 -2.402e-05  7.880e-05 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.46682   1.000 -0.450 -0.273 -0.027 -0.108  0.052 -0.173  0.275
+        2  0.74850  -0.450  1.000  0.590  0.053  0.047  0.103  0.192 -0.434
+        3  0.60539  -0.273  0.590  1.000  0.165  0.025  0.072  0.121 -0.237
+        4  0.20105  -0.027  0.053  0.165  1.000  0.017  0.001  0.092 -0.002
+        5  0.60420  -0.108  0.047  0.025  0.017  1.000 -0.293  0.589 -0.206
+        6  0.63186   0.052  0.103  0.072  0.001 -0.293  1.000 -0.311  0.485
+        7  0.64217  -0.173  0.192  0.121  0.092  0.589 -0.311  1.000 -0.324
+        8  0.69142   0.275 -0.434 -0.237 -0.002 -0.206  0.485 -0.324  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   13 **MINOS        5500           1
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.58494 added to diagonal of error matrix
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-57013.2) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=52871.6, NumSig=-29746.2, float_width=0.406811, mean=2.27935, p1=-0.368925, p2=0.29687, p3=-0.130414, p4=0.00443557, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = 52871.6 +/- 265.229,NumSig = -29746.2 +/- 117.86,float_width = 0.406811 +/- 0.275054,mean = 2.27935 +/- 0.00193042,p1 = -0.368925 +/- 0.00964706,p2 = 0.29687 +/- 0.0101396,p3 = -0.130414 +/- 0.00835273,p4 = 0.00443557 +/- 0.00887658,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-49.730531), forcing value to zero @ !refCoefNorm=(mass = 2.27944), !pdfs=(signal = 38.7672/1,back = 0.709535/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.27944), !pdfs=(signal = 38.7672/1,back = 0.709535/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     p.d.f value is less than zero (-23.338741), forcing value to zero @ !refCoefNorm=(mass = 2.29037), !pdfs=(signal = 20.3889/1,back = 0.715687/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29037), !pdfs=(signal = 20.3889/1,back = 0.715687/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     p.d.f value is less than zero (-14.963686), forcing value to zero @ !refCoefNorm=(mass = 2.29304), !pdfs=(signal = 14.5571/1,back = 0.717701/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29304), !pdfs=(signal = 14.5571/1,back = 0.717701/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     p.d.f value is less than zero (-10.007525), forcing value to zero @ !refCoefNorm=(mass = 2.2949), !pdfs=(signal = 11.1079/1,back = 0.719217/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.2949), !pdfs=(signal = 11.1079/1,back = 0.719217/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     p.d.f value is less than zero (-7.061130), forcing value to zero @ !refCoefNorm=(mass = 2.29621), !pdfs=(signal = 9.05858/1,back = 0.72033/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29621), !pdfs=(signal = 9.05858/1,back = 0.72033/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     p.d.f value is less than zero (-28.248111), forcing value to zero @ !refCoefNorm=(mass = 2.28893), !pdfs=(signal = 23.8084/1,back = 0.714675/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28893), !pdfs=(signal = 23.8084/1,back = 0.714675/0.29596), !coefficients=(NumSig = -29746.2 +/- 117.86,NumBkg = 52871.6 +/- 265.229)
+    ... (remaining 2038 messages suppressed)
+
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.22183 added to diagonal of error matrix
+ MIGRAD FAILS WITH STRATEGY=0.   WILL TRY WITH STRATEGY=1.
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    585 CALLS         837 TOTAL
+                     EDM=0.0119057    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31368e+04   2.65229e+02  -2.63616e+02   2.88931e+02
+   2  NumSig       5.13242e+02   1.17860e+02                            
+   3  float_width   2.74256e-01   2.75054e-01                            
+   4  mean         2.28570e+00   1.93042e-03                            
+   5  p1          -1.63890e-01   9.64706e-03                            
+   6  p2          -5.04116e-02   1.01396e-02                            
+   7  p3           1.27185e-02   8.35273e-03                            
+   8  p4           6.58203e-03   8.87658e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   14 **MINOS        5500           2
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.14762 added to diagonal of error matrix
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.2694e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-57013.2) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-1.30605e+06, NumSig=376.084, float_width=0.0308858, mean=2.28419, p1=-0.198804, p2=0.570868, p3=0.103434, p4=-0.901391, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = -1.30605e+06 +/- 265.229,NumSig = 376.084 +/- 117.86,float_width = 0.0308858 +/- 0.275054,mean = 2.28419 +/- 0.00193042,p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-0.000392), forcing value to zero @ !refCoefNorm=(mass = 2.25974), !pdfs=(signal = 1.32247/1,back = -0.393834/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.25974), !pdfs=(signal = 1.32247/1,back = -0.393834/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     p.d.f value is less than zero (-0.005374), forcing value to zero @ !refCoefNorm=(mass = 2.29469), !pdfs=(signal = 18.1403/1,back = -0.395285/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29469), !pdfs=(signal = 18.1403/1,back = -0.395285/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     p.d.f value is less than zero (-0.000373), forcing value to zero @ !refCoefNorm=(mass = 2.30913), !pdfs=(signal = 1.25855/1,back = -0.204338/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.30913), !pdfs=(signal = 1.25855/1,back = -0.204338/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     p.d.f value is less than zero (-0.000048), forcing value to zero @ !refCoefNorm=(mass = 2.23931), !pdfs=(signal = 0.162374/1,back = -0.0859742/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.23931), !pdfs=(signal = 0.162374/1,back = -0.0859742/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     p.d.f value is less than zero (-0.000033), forcing value to zero @ !refCoefNorm=(mass = 2.23638), !pdfs=(signal = 0.110195/1,back = -0.0255542/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.23638), !pdfs=(signal = 0.110195/1,back = -0.0255542/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     p.d.f value is less than zero (-0.014566), forcing value to zero @ !refCoefNorm=(mass = 2.28148), !pdfs=(signal = 49.1639/1,back = -0.474949/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28148), !pdfs=(signal = 49.1639/1,back = -0.474949/0.290902), !coefficients=(NumSig = 376.084 +/- 117.86,NumBkg = -1.30605e+06 +/- 265.229)
+    ... (remaining 2038 messages suppressed)
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.471897), forcing value to zero @ x=mass=2.27188, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.150392), forcing value to zero @ x=mass=2.31225, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.357675), forcing value to zero @ x=mass=2.29826, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.199466), forcing value to zero @ x=mass=2.30943, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.457223), forcing value to zero @ x=mass=2.26826, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.479533), forcing value to zero @ x=mass=2.27854, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.212113), forcing value to zero @ x=mass=2.30866, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.167876), forcing value to zero @ x=mass=2.31126, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.468245), forcing value to zero @ x=mass=2.28371, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.364696), forcing value to zero @ x=mass=2.29764, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.450148), forcing value to zero @ x=mass=2.28756, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+     p.d.f value is less than zero (-0.188841), forcing value to zero @ x=mass=2.24479, coefList=(p1 = -0.198804 +/- 0.00964706,p2 = 0.570868 +/- 0.0101396,p3 = 0.103434 +/- 0.00835273,p4 = -0.901391 +/- 0.00887658)
+    ... (remaining 2038 messages suppressed)
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -788385
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -318656
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-57013.2) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=52589.7, NumSig=376.084, float_width=0.0310502, mean=2.28418, p1=-0.173915, p2=0.546264, p3=0.126486, p4=-0.912627, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.463562), forcing value to zero @ x=mass=2.27371, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.466705), forcing value to zero @ x=mass=2.27553, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.246826), forcing value to zero @ x=mass=2.24954, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.220286), forcing value to zero @ x=mass=2.24787, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.424750), forcing value to zero @ x=mass=2.26531, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.459835), forcing value to zero @ x=mass=2.28304, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.439391), forcing value to zero @ x=mass=2.28774, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.462115), forcing value to zero @ x=mass=2.28222, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.394329), forcing value to zero @ x=mass=2.26153, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.088862), forcing value to zero @ x=mass=2.24058, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.356244), forcing value to zero @ x=mass=2.29769, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+     p.d.f value is less than zero (-0.460012), forcing value to zero @ x=mass=2.27236, coefList=(p1 = -0.173915 +/- 0.00964706,p2 = 0.546264 +/- 0.0101396,p3 = 0.126486 +/- 0.00835273,p4 = -0.912627 +/- 0.00887658)
+    ... (remaining 2038 messages suppressed)
+
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    568 CALLS        1405 TOTAL
+                     EDM=0.0119057    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31368e+04   2.65229e+02  -2.63616e+02   2.88931e+02
+   2  NumSig       5.13242e+02   1.17860e+02  -1.37639e+02   1.35221e+02
+   3  float_width   2.74256e-01   2.75054e-01                            
+   4  mean         2.28570e+00   1.93042e-03                            
+   5  p1          -1.63890e-01   9.64706e-03                            
+   6  p2          -5.04116e-02   1.01396e-02                            
+   7  p3           1.27185e-02   8.35273e-03                            
+   8  p4           6.58203e-03   8.87658e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   15 **MINOS        5500           3
+ **********
+    THE POSITIVE MINOS ERROR OF PARAMETER   3, float_width EXCEEDS ITS LIMIT.
+ FCN=-573331 FROM MINOS     STATUS=PROBLEMS      236 CALLS        1641 TOTAL
+                     EDM=0.0119057    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31368e+04   2.65229e+02  -2.63616e+02   2.88931e+02
+   2  NumSig       5.13242e+02   1.17860e+02  -1.37639e+02   1.35221e+02
+   3  float_width   2.74256e-01   2.75054e-01  -3.43109e-01   at limit   
+   4  mean         2.28570e+00   1.93042e-03                            
+   5  p1          -1.63890e-01   9.64706e-03                            
+   6  p2          -5.04116e-02   1.01396e-02                            
+   7  p3           1.27185e-02   8.35273e-03                            
+   8  p4           6.58203e-03   8.87658e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   16 **MINOS        5500           4
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 4.53065 added to diagonal of error matrix
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.14386e+06
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-57013.2) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-1.19781e+06, NumSig=28608, float_width=0.366624, mean=2.28763, p1=-0.279141, p2=-0.353503, p3=0.494446, p4=0.642839, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = -1.19781e+06 +/- 265.229,NumSig = 28608 +/- 117.86,float_width = 0.366624 +/- 0.275054,mean = 2.28763 +/- 0.00193042,p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-0.000189), forcing value to zero @ !refCoefNorm=(mass = 2.37109), !pdfs=(signal = 0.00755755/1,back = -0.015835/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.37109), !pdfs=(signal = 0.00755755/1,back = -0.015835/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     p.d.f value is less than zero (-0.000000), forcing value to zero @ !refCoefNorm=(mass = 2.40979), !pdfs=(signal = 1.16915e-05/1,back = -0.0348362/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.40979), !pdfs=(signal = 1.16915e-05/1,back = -0.0348362/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     p.d.f value is less than zero (-0.000018), forcing value to zero @ !refCoefNorm=(mass = 2.38695), !pdfs=(signal = 0.000714752/1,back = -0.178016/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.38695), !pdfs=(signal = 0.000714752/1,back = -0.178016/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     p.d.f value is less than zero (-0.000058), forcing value to zero @ !refCoefNorm=(mass = 2.37938), !pdfs=(signal = 0.00231909/1,back = -0.121456/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.37938), !pdfs=(signal = 0.00231909/1,back = -0.121456/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     p.d.f value is less than zero (-0.000096), forcing value to zero @ !refCoefNorm=(mass = 2.37595), !pdfs=(signal = 0.00383312/1,back = -0.0827526/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.37595), !pdfs=(signal = 0.00383312/1,back = -0.0827526/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     p.d.f value is less than zero (-0.000007), forcing value to zero @ !refCoefNorm=(mass = 2.39246), !pdfs=(signal = 0.000286736/1,back = -0.190605/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.39246), !pdfs=(signal = 0.000286736/1,back = -0.190605/0.361968), !coefficients=(NumSig = 28608 +/- 117.86,NumBkg = -1.19781e+06 +/- 265.229)
+    ... (remaining 2038 messages suppressed)
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.033442), forcing value to zero @ x=mass=2.37228, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.159167), forcing value to zero @ x=mass=2.40043, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.183521), forcing value to zero @ x=mass=2.38832, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.162212), forcing value to zero @ x=mass=2.38418, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.164830), forcing value to zero @ x=mass=2.38457, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.186208), forcing value to zero @ x=mass=2.38918, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.141550), forcing value to zero @ x=mass=2.40238, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.102544), forcing value to zero @ x=mass=2.37762, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.033598), forcing value to zero @ x=mass=2.37229, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.152062), forcing value to zero @ x=mass=2.40127, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.101161), forcing value to zero @ x=mass=2.40574, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+     p.d.f value is less than zero (-0.170398), forcing value to zero @ x=mass=2.38548, coefList=(p1 = -0.279141 +/- 0.00964706,p2 = -0.353503 +/- 0.0101396,p3 = 0.494446 +/- 0.00835273,p4 = 0.642839 +/- 0.00887658)
+    ... (remaining 2038 messages suppressed)
+
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -521757
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-57013.2) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=196062, NumSig=27787, float_width=0.369536, mean=2.28763, p1=-0.306798, p2=-0.323668, p3=0.469443, p4=0.669222, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.065660), forcing value to zero @ x=mass=2.4096, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.217851), forcing value to zero @ x=mass=2.39384, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.132152), forcing value to zero @ x=mass=2.37805, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.217952), forcing value to zero @ x=mass=2.39117, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.081712), forcing value to zero @ x=mass=2.37406, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.006963), forcing value to zero @ x=mass=2.41242, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.197770), forcing value to zero @ x=mass=2.38557, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.197461), forcing value to zero @ x=mass=2.38552, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.126950), forcing value to zero @ x=mass=2.4059, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.192130), forcing value to zero @ x=mass=2.39985, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.069031), forcing value to zero @ x=mass=2.37316, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+     p.d.f value is less than zero (-0.053360), forcing value to zero @ x=mass=2.37209, coefList=(p1 = -0.306798 +/- 0.00964706,p2 = -0.323668 +/- 0.0101396,p3 = 0.469443 +/- 0.00835273,p4 = 0.669222 +/- 0.00887658)
+    ... (remaining 2038 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-57013.2) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=60283.1, NumSig=-7085.55, float_width=0.337758, mean=2.28763, p1=-0.170986, p2=-0.0643175, p3=0.0372689, p4=0.0428552, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = 60283.1 +/- 265.229,NumSig = -7085.55 +/- 117.86,float_width = 0.337758 +/- 0.275054,mean = 2.28763 +/- 0.00193042,p1 = -0.170986 +/- 0.00964706,p2 = -0.0643175 +/- 0.0101396,p3 = 0.0372689 +/- 0.00835273,p4 = 0.0428552 +/- 0.00887658,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-1.401483), forcing value to zero @ !refCoefNorm=(mass = 2.28337), !pdfs=(signal = 36.6014/1,back = 1.08647/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28337), !pdfs=(signal = 36.6014/1,back = 1.08647/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     p.d.f value is less than zero (-1.085157), forcing value to zero @ !refCoefNorm=(mass = 2.28226), !pdfs=(signal = 34.3479/1,back = 1.08867/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28226), !pdfs=(signal = 34.3479/1,back = 1.08867/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     p.d.f value is less than zero (-2.001478), forcing value to zero @ !refCoefNorm=(mass = 2.28755), !pdfs=(signal = 40.7687/1,back = 1.07788/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28755), !pdfs=(signal = 40.7687/1,back = 1.07788/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     p.d.f value is less than zero (-1.639496), forcing value to zero @ !refCoefNorm=(mass = 2.28438), !pdfs=(signal = 38.2879/1,back = 1.08444/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28438), !pdfs=(signal = 38.2879/1,back = 1.08444/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     p.d.f value is less than zero (-1.446768), forcing value to zero @ !refCoefNorm=(mass = 2.29196), !pdfs=(signal = 36.4907/1,back = 1.06831/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29196), !pdfs=(signal = 36.4907/1,back = 1.06831/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     p.d.f value is less than zero (-0.962986), forcing value to zero @ !refCoefNorm=(mass = 2.28187), !pdfs=(signal = 33.4755/1,back = 1.08943/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28187), !pdfs=(signal = 33.4755/1,back = 1.08943/0.341537), !coefficients=(NumSig = -7085.55 +/- 117.86,NumBkg = 60283.1 +/- 265.229)
+    ... (remaining 2038 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-57013.2) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=64665.3, NumSig=-10339.9, float_width=0.366566, mean=2.28763, p1=-0.177353, p2=-0.76208, p3=0.0852627, p4=0.999886, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = 64665.3 +/- 265.229,NumSig = -10339.9 +/- 117.86,float_width = 0.366566 +/- 0.275054,mean = 2.28763 +/- 0.00193042,p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-0.000000), forcing value to zero @ !refCoefNorm=(mass = 2.41733), !pdfs=(signal = 2.49353e-06/1,back = -0.12017/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.41733), !pdfs=(signal = 2.49353e-06/1,back = -0.12017/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     p.d.f value is less than zero (-0.000036), forcing value to zero @ !refCoefNorm=(mass = 2.39501), !pdfs=(signal = 0.000184455/1,back = -0.201308/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.39501), !pdfs=(signal = 0.000184455/1,back = -0.201308/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     p.d.f value is less than zero (-0.000001), forcing value to zero @ !refCoefNorm=(mass = 2.41632), !pdfs=(signal = 3.08218e-06/1,back = -0.139843/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.41632), !pdfs=(signal = 3.08218e-06/1,back = -0.139843/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     p.d.f value is less than zero (-0.000001), forcing value to zero @ !refCoefNorm=(mass = 2.41708), !pdfs=(signal = 2.62744e-06/1,back = -0.125174/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.41708), !pdfs=(signal = 2.62744e-06/1,back = -0.125174/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     p.d.f value is less than zero (-0.000050), forcing value to zero @ !refCoefNorm=(mass = 2.39315), !pdfs=(signal = 0.000254465/1,back = -0.179751/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.39315), !pdfs=(signal = 0.000254465/1,back = -0.179751/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     p.d.f value is less than zero (-0.000009), forcing value to zero @ !refCoefNorm=(mass = 2.4027), !pdfs=(signal = 4.5874e-05/1,back = -0.249432/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.4027), !pdfs=(signal = 4.5874e-05/1,back = -0.249432/0.399905), !coefficients=(NumSig = -10339.9 +/- 117.86,NumBkg = 64665.3 +/- 265.229)
+    ... (remaining 2038 messages suppressed)
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.030764), forcing value to zero @ x=mass=2.4211, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.080305), forcing value to zero @ x=mass=2.38678, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.050336), forcing value to zero @ x=mass=2.38521, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.247159), forcing value to zero @ x=mass=2.40615, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.250355), forcing value to zero @ x=mass=2.40428, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.249483), forcing value to zero @ x=mass=2.40513, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.230630), forcing value to zero @ x=mass=2.39834, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.249929), forcing value to zero @ x=mass=2.40306, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.250332), forcing value to zero @ x=mass=2.40432, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.175315), forcing value to zero @ x=mass=2.3928, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.042759), forcing value to zero @ x=mass=2.42065, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+     p.d.f value is less than zero (-0.170595), forcing value to zero @ x=mass=2.39244, coefList=(p1 = -0.177353 +/- 0.00964706,p2 = -0.76208 +/- 0.0101396,p3 = 0.0852627 +/- 0.00835273,p4 = 0.999886 +/- 0.00887658)
+    ... (remaining 2038 messages suppressed)
+
+ MIGRAD FAILS WITH STRATEGY=0.   WILL TRY WITH STRATEGY=1.
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    322 CALLS        1963 TOTAL
+                     EDM=0.0119057    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31368e+04   2.65229e+02  -2.63616e+02   2.88931e+02
+   2  NumSig       5.13242e+02   1.17860e+02  -1.37639e+02   1.35221e+02
+   3  float_width   2.74256e-01   2.75054e-01  -3.43109e-01   at limit   
+   4  mean         2.28570e+00   1.93042e-03  -1.93685e-03   1.94533e-03
+   5  p1          -1.63890e-01   9.64706e-03                            
+   6  p2          -5.04116e-02   1.01396e-02                            
+   7  p3           1.27185e-02   8.35273e-03                            
+   8  p4           6.58203e-03   8.87658e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   17 **MINOS        5500           5
+ **********
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL     63 CALLS        2026 TOTAL
+                     EDM=0.0119057    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31368e+04   2.65229e+02  -2.63616e+02   2.88931e+02
+   2  NumSig       5.13242e+02   1.17860e+02  -1.37639e+02   1.35221e+02
+   3  float_width   2.74256e-01   2.75054e-01  -3.43109e-01   at limit   
+   4  mean         2.28570e+00   1.93042e-03  -1.93685e-03   1.94533e-03
+   5  p1          -1.63890e-01   9.64706e-03  -9.65400e-03   9.62521e-03
+   6  p2          -5.04116e-02   1.01396e-02                            
+   7  p3           1.27185e-02   8.35273e-03                            
+   8  p4           6.58203e-03   8.87658e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   18 **MINOS        5500           6
+ **********
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    182 CALLS        2208 TOTAL
+                     EDM=0.0119057    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31368e+04   2.65229e+02  -2.63616e+02   2.88931e+02
+   2  NumSig       5.13242e+02   1.17860e+02  -1.37639e+02   1.35221e+02
+   3  float_width   2.74256e-01   2.75054e-01  -3.43109e-01   at limit   
+   4  mean         2.28570e+00   1.93042e-03  -1.93685e-03   1.94533e-03
+   5  p1          -1.63890e-01   9.64706e-03  -9.65400e-03   9.62521e-03
+   6  p2          -5.04116e-02   1.01396e-02  -1.03171e-02   1.00314e-02
+   7  p3           1.27185e-02   8.35273e-03                            
+   8  p4           6.58203e-03   8.87658e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   19 **MINOS        5500           7
+ **********
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    181 CALLS        2389 TOTAL
+                     EDM=0.0119057    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31368e+04   2.65229e+02  -2.63616e+02   2.88931e+02
+   2  NumSig       5.13242e+02   1.17860e+02  -1.37639e+02   1.35221e+02
+   3  float_width   2.74256e-01   2.75054e-01  -3.43109e-01   at limit   
+   4  mean         2.28570e+00   1.93042e-03  -1.93685e-03   1.94533e-03
+   5  p1          -1.63890e-01   9.64706e-03  -9.65400e-03   9.62521e-03
+   6  p2          -5.04116e-02   1.01396e-02  -1.03171e-02   1.00314e-02
+   7  p3           1.27185e-02   8.35273e-03  -8.56467e-03   8.28688e-03
+   8  p4           6.58203e-03   8.87658e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   20 **MINOS        5500           8
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.01392 added to diagonal of error matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.17713 added to diagonal of error matrix
+ MIGRAD FAILS WITH STRATEGY=0.   WILL TRY WITH STRATEGY=1.
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.02987 added to diagonal of error matrix
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    458 CALLS        2847 TOTAL
+                     EDM=0.0119057    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31368e+04   2.65229e+02  -2.63616e+02   2.88931e+02
+   2  NumSig       5.13242e+02   1.17860e+02  -1.37639e+02   1.35221e+02
+   3  float_width   2.74256e-01   2.75054e-01  -3.43109e-01   at limit   
+   4  mean         2.28570e+00   1.93042e-03  -1.93685e-03   1.94533e-03
+   5  p1          -1.63890e-01   9.64706e-03  -9.65400e-03   9.62521e-03
+   6  p2          -5.04116e-02   1.01396e-02  -1.03171e-02   1.00314e-02
+   7  p3           1.27185e-02   8.35273e-03  -8.56467e-03   8.28688e-03
+   8  p4           6.58203e-03   8.87658e-03  -8.85408e-03   9.52493e-03
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+Info in <TMinuitMinimizer::GetMinosError>: Parameter ratio is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width1 is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width2 is fixed. There are no Minos error to calculate. Ignored.
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_ds'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_ds'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (back)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range [2.108,2.444]
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_ds'
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) constructing test statistic for sub-range named fit
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_ds) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   21 **SET PRINT           1
+ **********
+ **********
+ **   22 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 NumBkg       5.31368e+04  2.65229e+02   -2.67330e+06  2.67330e+06
+     2 NumSig       5.13242e+02  1.17860e+02   -3.00000e+04  3.00000e+04
+     3 float_width   2.74256e-01  2.75054e-01   -5.00000e-01  5.00000e-01
+ MINUIT WARNING IN PARAMETR
+ ============== VARIABLE3 BROUGHT BACK INSIDE LIMITS.
+     4 mean         2.28570e+00  1.93042e-03    2.21000e+00  2.36000e+00
+     5 p1          -1.63890e-01  9.64706e-03   -1.00000e+00  1.00000e+00
+     6 p2          -5.04116e-02  1.01396e-02   -1.00000e+00  1.00000e+00
+     7 p3           1.27185e-02  8.35273e-03   -1.00000e+00  1.00000e+00
+     8 p4           6.58203e-03  8.87658e-03   -1.00000e+00  1.00000e+00
+     9 ratio        8.64574e-01  8.64574e-02     no limits
+ **********
+ **   23 **FIX           9
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+    10 width1       6.68920e-03  6.68920e-04     no limits
+ **********
+ **   24 **FIX          10
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+    11 width2       1.81433e-02  1.81433e-03     no limits
+ **********
+ **   25 **FIX          11
+ **********
+ **********
+ **   26 **SET ERR         0.5
+ **********
+ **********
+ **   27 **SET PRINT           1
+ **********
+ **********
+ **   28 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   29 **MIGRAD        5500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-573331 FROM MIGRAD    STATUS=INITIATE       24 CALLS          25 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       5.31368e+04   2.65229e+02   9.92339e-05  -9.07130e+01
+   2  NumSig       5.13242e+02   1.17860e+02   3.92926e-03   2.36554e+00
+   3  float_width   2.74256e-01   2.75054e-01   7.85219e-01  -1.70657e-02
+   4  mean         2.28570e+00   1.93042e-03   2.57429e-02   1.43796e-01
+   5  p1          -1.63890e-01   9.64706e-03   9.77946e-03  -1.36732e-02
+   6  p2          -5.04116e-02   1.01396e-02   1.01527e-02   3.93299e-01
+   7  p3           1.27185e-02   8.35273e-03   8.35351e-03  -3.46609e-01
+   8  p4           6.58203e-03   8.87658e-03   8.87689e-03  -4.69159e-01
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-573331 FROM HESSE     STATUS=OK             73 CALLS         104 TOTAL
+                     EDM=0.00598363    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       5.31368e+04   2.65313e+02   5.18857e-05  -8.49071e+01
+   2  NumSig       5.13242e+02   1.18059e+02   1.36237e-03   2.90023e+00
+   3  float_width   2.74256e-01   2.75581e-01   2.94362e-01   1.35225e-01
+   4  mean         2.28570e+00   1.93114e-03   1.34600e-02   2.03115e-01
+   5  p1          -1.63890e-01   9.64764e-03   5.11332e-03  -9.37178e-03
+   6  p2          -5.04116e-02   1.01450e-02   5.30846e-03   2.92844e-01
+   7  p3           1.27185e-02   8.35430e-03   3.34814e-03  -3.53304e-01
+   8  p4           6.58203e-03   8.88295e-03   3.35318e-03  -4.86819e-01
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-573331 FROM MIGRAD    STATUS=CONVERGED     232 CALLS         233 TOTAL
+                     EDM=0.000474542    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NumBkg       5.31498e+04   2.64658e+02   4.58875e-05   5.91996e+00
+   2  NumSig       5.02736e+02   1.16587e+02   1.34173e-03   6.63574e+00
+   3  float_width   2.35140e-01   2.67523e-01   2.66897e-01  -1.56157e-02
+   4  mean         2.28565e+00   1.89935e-03   1.29781e-02  -1.36527e-01
+   5  p1          -1.63915e-01   9.64543e-03   4.07363e-03  -2.74015e-02
+   6  p2          -5.05277e-02   1.01374e-02   4.11425e-03   3.94851e-02
+   7  p3           1.25856e-02   8.34607e-03   3.34770e-03   9.96635e-02
+   8  p4           6.92539e-03   8.86183e-03   3.35209e-03  -6.65559e-02
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  7.004e+04 -1.376e+04 -2.104e+01 -1.307e-02 -2.763e-01  1.432e-01 -3.782e-01  6.393e-01 
+ -1.376e+04  1.359e+04  2.016e+01  1.117e-02  5.302e-02  1.193e-01  1.843e-01 -4.457e-01 
+ -2.104e+01  2.016e+01  8.261e-02  8.454e-05  7.125e-05  2.081e-04  2.901e-04 -6.186e-04 
+ -1.307e-02  1.117e-02  8.454e-05  3.608e-06  2.982e-07  9.885e-09  1.409e-06 -4.098e-08 
+ -2.763e-01  5.302e-02  7.125e-05  2.982e-07  9.304e-05 -2.870e-05  4.744e-05 -1.763e-05 
+  1.432e-01  1.193e-01  2.081e-04  9.885e-09 -2.870e-05  1.028e-04 -2.634e-05  4.372e-05 
+ -3.782e-01  1.843e-01  2.901e-04  1.409e-06  4.744e-05 -2.634e-05  6.966e-05 -2.389e-05 
+  6.393e-01 -4.457e-01 -6.186e-04 -4.098e-08 -1.763e-05  4.372e-05 -2.389e-05  7.853e-05 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.46311   1.000 -0.446 -0.277 -0.026 -0.108  0.053 -0.171  0.273
+        2  0.75061  -0.446  1.000  0.602  0.050  0.047  0.101  0.189 -0.431
+        3  0.61464  -0.277  0.602  1.000  0.155  0.026  0.071  0.121 -0.243
+        4  0.19055  -0.026  0.050  0.155  1.000  0.016  0.001  0.089 -0.002
+        5  0.60423  -0.108  0.047  0.026  0.016  1.000 -0.294  0.589 -0.206
+        6  0.63171   0.053  0.101  0.071  0.001 -0.294  1.000 -0.311  0.487
+        7  0.64155  -0.171  0.189  0.121  0.089  0.589 -0.311  1.000 -0.323
+        8  0.69041   0.273 -0.431 -0.243 -0.002 -0.206  0.487 -0.323  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   30 **SET ERR         0.5
+ **********
+ **********
+ **   31 **SET PRINT           1
+ **********
+ **********
+ **   32 **HESSE        5500
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-573331 FROM HESSE     STATUS=OK             61 CALLS         294 TOTAL
+                     EDM=0.000528638    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  NumBkg       5.31498e+04   2.73553e+02   1.83550e-06   1.98830e-02
+   2  NumSig       5.02736e+02   1.32773e+02   5.36692e-05   1.67587e-02
+   3  float_width   2.35140e-01   2.98623e-01   1.06759e-02   4.89609e-01
+   4  mean         2.28565e+00   1.89213e-03   5.19124e-04   8.72383e-03
+   5  p1          -1.63915e-01   9.63819e-03   1.62945e-04  -1.64658e-01
+   6  p2          -5.05277e-02   1.01393e-02   1.64570e-04  -5.05492e-02
+   7  p3           1.25856e-02   8.38278e-03   1.33908e-04   1.25860e-02
+   8  p4           6.92539e-03   9.10772e-03   1.34083e-04   6.92545e-03
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  7.483e+04 -1.817e+04 -3.273e+01 -2.724e-02 -2.912e-01  1.005e-01 -4.413e-01  7.871e-01 
+ -1.817e+04  1.763e+04  3.097e+01  2.433e-02  6.763e-02  1.570e-01  2.436e-01 -5.826e-01 
+ -3.273e+01  3.097e+01  1.076e-01  9.013e-05  1.097e-04  3.110e-04  4.391e-04 -9.860e-04 
+ -2.724e-02  2.433e-02  9.013e-05  3.581e-06  3.504e-07  1.237e-07  1.586e-06 -5.288e-07 
+ -2.912e-01  6.763e-02  1.097e-04  3.504e-07  9.290e-05 -2.838e-05  4.742e-05 -1.789e-05 
+  1.005e-01  1.570e-01  3.110e-04  1.237e-07 -2.838e-05  1.028e-04 -2.545e-05  4.215e-05 
+ -4.413e-01  2.436e-01  4.391e-04  1.586e-06  4.742e-05 -2.545e-05  7.027e-05 -2.562e-05 
+  7.871e-01 -5.826e-01 -9.860e-04 -5.288e-07 -1.789e-05  4.215e-05 -2.562e-05  8.295e-05 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.51451   1.000 -0.500 -0.365 -0.053 -0.110  0.036 -0.192  0.316
+        2  0.81447  -0.500  1.000  0.711  0.097  0.053  0.117  0.219 -0.482
+        3  0.71547  -0.365  0.711  1.000  0.145  0.035  0.094  0.160 -0.330
+        4  0.17495  -0.053  0.097  0.145  1.000  0.019  0.006  0.100 -0.031
+        5  0.60344  -0.110  0.053  0.035  0.019  1.000 -0.290  0.587 -0.204
+        6  0.63189   0.036  0.117  0.094  0.006 -0.290  1.000 -0.299  0.456
+        7  0.64555  -0.192  0.219  0.160  0.100  0.587 -0.299  1.000 -0.336
+        8  0.71031   0.316 -0.482 -0.330 -0.031 -0.204  0.456 -0.336  1.000
+[#1] INFO:Minization -- RooMinimizerFcn::synchronize: set of constant parameters changed, rerunning const optimizer
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigma1,sigma2,back)
+ **********
+ **   33 **MINOS        5500           1
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.01422 added to diagonal of error matrix
+ MIGRAD FAILS WITH STRATEGY=0.   WILL TRY WITH STRATEGY=1.
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.31636 added to diagonal of error matrix
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-566888) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=52876.2, NumSig=-24255.8, float_width=0.404762, mean=2.27584, p1=-0.191923, p2=-0.0894655, p3=0.0843761, p4=0.027312, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-15.261974), forcing value to zero @ !refCoefNorm=(mass = 2.26641), !pdfs=(signal = 24.1837/1,back = 1.1308/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.26641), !pdfs=(signal = 24.1837/1,back = 1.1308/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     p.d.f value is less than zero (-26.773309), forcing value to zero @ !refCoefNorm=(mass = 2.2729), !pdfs=(signal = 37.0657/1,back = 1.11443/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.2729), !pdfs=(signal = 37.0657/1,back = 1.11443/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     p.d.f value is less than zero (-12.055936), forcing value to zero @ !refCoefNorm=(mass = 2.28692), !pdfs=(signal = 20.2263/1,back = 1.0754/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28692), !pdfs=(signal = 20.2263/1,back = 1.0754/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     p.d.f value is less than zero (-28.232997), forcing value to zero @ !refCoefNorm=(mass = 2.275), !pdfs=(signal = 38.6779/1,back = 1.10891/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.275), !pdfs=(signal = 38.6779/1,back = 1.10891/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     p.d.f value is less than zero (-27.537689), forcing value to zero @ !refCoefNorm=(mass = 2.27374), !pdfs=(signal = 37.9143/1,back = 1.11224/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.27374), !pdfs=(signal = 37.9143/1,back = 1.11224/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     p.d.f value is less than zero (-28.371320), forcing value to zero @ !refCoefNorm=(mass = 2.27604), !pdfs=(signal = 38.8166/1,back = 1.1061/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.27604), !pdfs=(signal = 38.8166/1,back = 1.1061/0.345179), !coefficients=(NumSig = -24255.8 +/- 132.773,NumBkg = 52876.2 +/- 273.553)
+    ... (remaining 2038 messages suppressed)
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = 52876.2 +/- 273.553,NumSig = -24255.8 +/- 132.773,float_width = 0.404762 +/- 0.298623,mean = 2.27584 +/- 0.00189213,p1 = -0.191923 +/- 0.00963819,p2 = -0.0894655 +/- 0.0101393,p3 = 0.0843761 +/- 0.00838278,p4 = 0.027312 +/- 0.00910772,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    439 CALLS         733 TOTAL
+                     EDM=0.000528638    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31498e+04   2.73553e+02  -2.74409e+02   2.74435e+02
+   2  NumSig       5.02736e+02   1.32773e+02                            
+   3  float_width   2.35140e-01   2.98623e-01                            
+   4  mean         2.28565e+00   1.89213e-03                            
+   5  p1          -1.63915e-01   9.63819e-03                            
+   6  p2          -5.05277e-02   1.01393e-02                            
+   7  p3           1.25856e-02   8.38278e-03                            
+   8  p4           6.92539e-03   9.10772e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   34 **MINOS        5500           2
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 56.404 added to diagonal of error matrix
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -985166
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-566888) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=-1.01051e+06, NumSig=635.509, float_width=0.488796, mean=2.31581, p1=0.852595, p2=0.896293, p3=0.872339, p4=0.623853, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.136846), forcing value to zero @ x=mass=2.34055, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.025047), forcing value to zero @ x=mass=2.37873, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.109305), forcing value to zero @ x=mass=2.37317, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.054402), forcing value to zero @ x=mass=2.377, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.202974), forcing value to zero @ x=mass=2.36004, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.174571), forcing value to zero @ x=mass=2.36639, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.108742), forcing value to zero @ x=mass=2.33731, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.077452), forcing value to zero @ x=mass=2.33411, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.175110), forcing value to zero @ x=mass=2.34608, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.056985), forcing value to zero @ x=mass=2.37684, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.189586), forcing value to zero @ x=mass=2.34896, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+     p.d.f value is less than zero (-0.154983), forcing value to zero @ x=mass=2.36889, coefList=(p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772)
+    ... (remaining 2038 messages suppressed)
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-0.000181), forcing value to zero @ !refCoefNorm=(mass = 2.36938), !pdfs=(signal = 0.279898/1,back = -0.150501/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.36938), !pdfs=(signal = 0.279898/1,back = -0.150501/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     p.d.f value is less than zero (-0.000501), forcing value to zero @ !refCoefNorm=(mass = 2.35363), !pdfs=(signal = 0.776031/1,back = -0.203999/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.35363), !pdfs=(signal = 0.776031/1,back = -0.203999/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     p.d.f value is less than zero (-0.000386), forcing value to zero @ !refCoefNorm=(mass = 2.3579), !pdfs=(signal = 0.598858/1,back = -0.206202/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.3579), !pdfs=(signal = 0.598858/1,back = -0.206202/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     p.d.f value is less than zero (-0.000226), forcing value to zero @ !refCoefNorm=(mass = 2.36621), !pdfs=(signal = 0.350851/1,back = -0.17575/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.36621), !pdfs=(signal = 0.350851/1,back = -0.17575/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     p.d.f value is less than zero (-0.000568), forcing value to zero @ !refCoefNorm=(mass = 2.35169), !pdfs=(signal = 0.88044/1,back = -0.199453/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.35169), !pdfs=(signal = 0.88044/1,back = -0.199453/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     p.d.f value is less than zero (-0.000185), forcing value to zero @ !refCoefNorm=(mass = 2.36905), !pdfs=(signal = 0.286894/1,back = -0.153576/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.36905), !pdfs=(signal = 0.286894/1,back = -0.153576/0.221371), !coefficients=(NumSig = 635.509 +/- 132.773,NumBkg = -1.01051e+06 +/- 273.553)
+    ... (remaining 2038 messages suppressed)
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = -1.01051e+06 +/- 273.553,NumSig = 635.509 +/- 132.773,float_width = 0.488796 +/- 0.298623,mean = 2.31581 +/- 0.00189213,p1 = 0.852595 +/- 0.00963819,p2 = 0.896293 +/- 0.0101393,p3 = 0.872339 +/- 0.00838278,p4 = 0.623853 +/- 0.00910772,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (743481) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=19156.9, NumSig=635.509, float_width=0.488827, mean=2.30815, p1=0.882761, p2=0.866635, p3=0.899202, p4=0.68307, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.205450), forcing value to zero @ x=mass=2.34965, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.147674), forcing value to zero @ x=mass=2.34198, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.133984), forcing value to zero @ x=mass=2.34055, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.076803), forcing value to zero @ x=mass=2.37873, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.155937), forcing value to zero @ x=mass=2.37317, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.104724), forcing value to zero @ x=mass=2.377, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.232640), forcing value to zero @ x=mass=2.36004, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.213173), forcing value to zero @ x=mass=2.36639, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.100136), forcing value to zero @ x=mass=2.33731, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.063178), forcing value to zero @ x=mass=2.33411, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.181941), forcing value to zero @ x=mass=2.34608, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+     p.d.f value is less than zero (-0.107166), forcing value to zero @ x=mass=2.37684, coefList=(p1 = 0.882761 +/- 0.00963819,p2 = 0.866635 +/- 0.0101393,p3 = 0.899202 +/- 0.00838278,p4 = 0.68307 +/- 0.00910772)
+    ... (remaining 2038 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (743481) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=27367.7, NumSig=635.509, float_width=0.489892, mean=2.28822, p1=-0.749562, p2=-0.175129, p3=0.370939, p4=-0.999581, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.320661), forcing value to zero @ x=mass=2.44103, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.220290), forcing value to zero @ x=mass=2.43967, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.460858), forcing value to zero @ x=mass=2.44285, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.029278), forcing value to zero @ x=mass=2.43689, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.168958), forcing value to zero @ x=mass=2.43894, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.082457), forcing value to zero @ x=mass=2.43769, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.451352), forcing value to zero @ x=mass=2.44273, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.125825), forcing value to zero @ x=mass=2.43832, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.014279), forcing value to zero @ x=mass=2.43666, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.486889), forcing value to zero @ x=mass=2.44318, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.384160), forcing value to zero @ x=mass=2.44187, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+     p.d.f value is less than zero (-0.148800), forcing value to zero @ x=mass=2.43866, coefList=(p1 = -0.749562 +/- 0.00963819,p2 = -0.175129 +/- 0.0101393,p3 = 0.370939 +/- 0.00838278,p4 = -0.999581 +/- 0.00910772)
+    ... (remaining 900 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (743481) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=40253.5, NumSig=635.509, float_width=0.491491, mean=2.24992, p1=0.737543, p2=0.87417, p3=-0.530554, p4=0.992949, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.392412), forcing value to zero @ x=mass=2.2061, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.987026), forcing value to zero @ x=mass=2.15707, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.249164), forcing value to zero @ x=mass=2.21165, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.710384), forcing value to zero @ x=mass=2.1432, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.550189), forcing value to zero @ x=mass=2.19966, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.401585), forcing value to zero @ x=mass=2.20574, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.333163), forcing value to zero @ x=mass=2.20842, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.135198), forcing value to zero @ x=mass=2.21595, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.482451), forcing value to zero @ x=mass=2.13694, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.999988), forcing value to zero @ x=mass=2.15851, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.704001), forcing value to zero @ x=mass=2.19275, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+     p.d.f value is less than zero (-0.546446), forcing value to zero @ x=mass=2.19982, coefList=(p1 = 0.737543 +/- 0.00963819,p2 = 0.87417 +/- 0.0101393,p3 = -0.530554 +/- 0.00838278,p4 = 0.992949 +/- 0.00910772)
+    ... (remaining 2038 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (743481) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=47077.7, NumSig=635.509, float_width=0.492573, mean=2.35307, p1=-0.524921, p2=0.138379, p3=0.966155, p4=0.635112, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.777947), forcing value to zero @ x=mass=2.37207, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.139623), forcing value to zero @ x=mass=2.33576, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.551133), forcing value to zero @ x=mass=2.40037, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.498703), forcing value to zero @ x=mass=2.35151, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.756865), forcing value to zero @ x=mass=2.36925, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.798526), forcing value to zero @ x=mass=2.38127, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.422571), forcing value to zero @ x=mass=2.40491, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.029108), forcing value to zero @ x=mass=2.33148, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.747210), forcing value to zero @ x=mass=2.36817, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.793581), forcing value to zero @ x=mass=2.37521, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.674582), forcing value to zero @ x=mass=2.39452, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+     p.d.f value is less than zero (-0.013999), forcing value to zero @ x=mass=2.3309, coefList=(p1 = -0.524921 +/- 0.00963819,p2 = 0.138379 +/- 0.0101393,p3 = 0.966155 +/- 0.00838278,p4 = 0.635112 +/- 0.00910772)
+    ... (remaining 2038 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (743481) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=56180.3, NumSig=635.509, float_width=0.493876, mean=2.22534, p1=-0.999972, p2=0.776666, p3=-0.933241, p4=0.59662, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.120530), forcing value to zero @ x=mass=2.18812, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.105963), forcing value to zero @ x=mass=2.19461, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.111057), forcing value to zero @ x=mass=2.19322, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.107728), forcing value to zero @ x=mass=2.19416, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.112416), forcing value to zero @ x=mass=2.19279, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.031086), forcing value to zero @ x=mass=2.20591, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.104179), forcing value to zero @ x=mass=2.19505, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.102719), forcing value to zero @ x=mass=2.19538, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.119655), forcing value to zero @ x=mass=2.18932, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.006888), forcing value to zero @ x=mass=2.20849, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.015173), forcing value to zero @ x=mass=2.20764, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+     p.d.f value is less than zero (-0.033429), forcing value to zero @ x=mass=2.1718, coefList=(p1 = -0.999972 +/- 0.00963819,p2 = 0.776666 +/- 0.0101393,p3 = -0.933241 +/- 0.00838278,p4 = 0.59662 +/- 0.00910772)
+    ... (remaining 2038 messages suppressed)
+
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    440 CALLS        1173 TOTAL
+                     EDM=0.000528638    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31498e+04   2.73553e+02  -2.74409e+02   2.74435e+02
+   2  NumSig       5.02736e+02   1.32773e+02  -1.26226e+02   1.44523e+02
+   3  float_width   2.35140e-01   2.98623e-01                            
+   4  mean         2.28565e+00   1.89213e-03                            
+   5  p1          -1.63915e-01   9.63819e-03                            
+   6  p2          -5.05277e-02   1.01393e-02                            
+   7  p3           1.25856e-02   8.38278e-03                            
+   8  p4           6.92539e-03   9.10772e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   35 **MINOS        5500           3
+ **********
+    THE POSITIVE MINOS ERROR OF PARAMETER   3, float_width EXCEEDS ITS LIMIT.
+ FCN=-573331 FROM MINOS     STATUS=PROBLEMS      126 CALLS        1299 TOTAL
+                     EDM=0.000528638    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31498e+04   2.73553e+02  -2.74409e+02   2.74435e+02
+   2  NumSig       5.02736e+02   1.32773e+02  -1.26226e+02   1.44523e+02
+   3  float_width   2.35140e-01   2.98623e-01  -3.01846e-01   at limit   
+   4  mean         2.28565e+00   1.89213e-03                            
+   5  p1          -1.63915e-01   9.63819e-03                            
+   6  p2          -5.05277e-02   1.01393e-02                            
+   7  p3           1.25856e-02   8.38278e-03                            
+   8  p4           6.92539e-03   9.10772e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   36 **MINOS        5500           4
+ **********
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    192 CALLS        1491 TOTAL
+                     EDM=0.000528638    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31498e+04   2.73553e+02  -2.74409e+02   2.74435e+02
+   2  NumSig       5.02736e+02   1.32773e+02  -1.26226e+02   1.44523e+02
+   3  float_width   2.35140e-01   2.98623e-01  -3.01846e-01   at limit   
+   4  mean         2.28565e+00   1.89213e-03  -1.87087e-03   1.97784e-03
+   5  p1          -1.63915e-01   9.63819e-03                            
+   6  p2          -5.05277e-02   1.01393e-02                            
+   7  p3           1.25856e-02   8.38278e-03                            
+   8  p4           6.92539e-03   9.10772e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   37 **MINOS        5500           5
+ **********
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL     52 CALLS        1543 TOTAL
+                     EDM=0.000528638    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31498e+04   2.73553e+02  -2.74409e+02   2.74435e+02
+   2  NumSig       5.02736e+02   1.32773e+02  -1.26226e+02   1.44523e+02
+   3  float_width   2.35140e-01   2.98623e-01  -3.01846e-01   at limit   
+   4  mean         2.28565e+00   1.89213e-03  -1.87087e-03   1.97784e-03
+   5  p1          -1.63915e-01   9.63819e-03  -9.64400e-03   9.63174e-03
+   6  p2          -5.05277e-02   1.01393e-02                            
+   7  p3           1.25856e-02   8.38278e-03                            
+   8  p4           6.92539e-03   9.10772e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   38 **MINOS        5500           6
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.39204 added to diagonal of error matrix
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.75341e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=57352.5, NumSig=-5114.73, float_width=0.268254, mean=2.28613, p1=-0.169358, p2=-0.0403884, p3=0.0127068, p4=0.0152428, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-0.557973), forcing value to zero @ !refCoefNorm=(mass = 2.28234), !pdfs=(signal = 39.0988/1,back = 1.04244/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28234), !pdfs=(signal = 39.0988/1,back = 1.04244/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     p.d.f value is less than zero (-0.153897), forcing value to zero @ !refCoefNorm=(mass = 2.28061), !pdfs=(signal = 35.1636/1,back = 1.04475/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28061), !pdfs=(signal = 35.1636/1,back = 1.04475/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     p.d.f value is less than zero (-0.865254), forcing value to zero @ !refCoefNorm=(mass = 2.28812), !pdfs=(signal = 41.8904/1,back = 1.03445/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28812), !pdfs=(signal = 41.8904/1,back = 1.03445/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     p.d.f value is less than zero (-0.923647), forcing value to zero @ !refCoefNorm=(mass = 2.28496), !pdfs=(signal = 42.6124/1,back = 1.03888/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28496), !pdfs=(signal = 42.6124/1,back = 1.03888/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     p.d.f value is less than zero (-0.390726), forcing value to zero @ !refCoefNorm=(mass = 2.29088), !pdfs=(signal = 37.0546/1,back = 1.03049/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29088), !pdfs=(signal = 37.0546/1,back = 1.03049/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     p.d.f value is less than zero (-0.750537), forcing value to zero @ !refCoefNorm=(mass = 2.28901), !pdfs=(signal = 40.7115/1,back = 1.03319/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28901), !pdfs=(signal = 40.7115/1,back = 1.03319/0.339253), !coefficients=(NumSig = -5114.73 +/- 132.773,NumBkg = 57352.5 +/- 273.553)
+    ... (remaining 2038 messages suppressed)
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = 57352.5 +/- 273.553,NumSig = -5114.73 +/- 132.773,float_width = 0.268254 +/- 0.298623,mean = 2.28613 +/- 0.00189213,p1 = -0.169358 +/- 0.00963819,p2 = -0.0403884 +/- 0.0101393,p3 = 0.0127068 +/- 0.00838278,p4 = 0.0152428 +/- 0.00910772,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    222 CALLS        1765 TOTAL
+                     EDM=0.000528638    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31498e+04   2.73553e+02  -2.74409e+02   2.74435e+02
+   2  NumSig       5.02736e+02   1.32773e+02  -1.26226e+02   1.44523e+02
+   3  float_width   2.35140e-01   2.98623e-01  -3.01846e-01   at limit   
+   4  mean         2.28565e+00   1.89213e-03  -1.87087e-03   1.97784e-03
+   5  p1          -1.63915e-01   9.63819e-03  -9.64400e-03   9.63174e-03
+   6  p2          -5.05277e-02   1.01393e-02  -1.01743e-02   1.01089e-02
+   7  p3           1.25856e-02   8.38278e-03                            
+   8  p4           6.92539e-03   9.10772e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   39 **MINOS        5500           7
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 3.9869 added to diagonal of error matrix
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -1.12692e+06
+[#0] ERROR:InputArguments -- model: calculated negative expected events: -20026.1
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.75341e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=83426.9, NumSig=-12020, float_width=0.293962, mean=2.28851, p1=-0.175312, p2=-0.0614473, p3=0.0209684, p4=0.00154972, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-2.425704), forcing value to zero @ !refCoefNorm=(mass = 2.29419), !pdfs=(signal = 34.3587/1,back = 1.03019/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29419), !pdfs=(signal = 34.3587/1,back = 1.03019/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     p.d.f value is less than zero (-3.164840), forcing value to zero @ !refCoefNorm=(mass = 2.28496), !pdfs=(signal = 38.9006/1,back = 1.04432/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28496), !pdfs=(signal = 38.9006/1,back = 1.04432/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     p.d.f value is less than zero (-1.098719), forcing value to zero @ !refCoefNorm=(mass = 2.28014), !pdfs=(signal = 27.1263/1,back = 1.05143/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28014), !pdfs=(signal = 27.1263/1,back = 1.05143/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     p.d.f value is less than zero (-2.398013), forcing value to zero @ !refCoefNorm=(mass = 2.2829), !pdfs=(signal = 34.5389/1,back = 1.04737/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.2829), !pdfs=(signal = 34.5389/1,back = 1.04737/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     p.d.f value is less than zero (-0.965135), forcing value to zero @ !refCoefNorm=(mass = 2.29734), !pdfs=(signal = 25.8382/1,back = 1.02524/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29734), !pdfs=(signal = 25.8382/1,back = 1.02524/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     p.d.f value is less than zero (-0.008537), forcing value to zero @ !refCoefNorm=(mass = 2.29935), !pdfs=(signal = 20.2584/1,back = 1.02204/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29935), !pdfs=(signal = 20.2584/1,back = 1.02204/0.342213), !coefficients=(NumSig = -12020 +/- 132.773,NumBkg = 83426.9 +/- 273.553)
+    ... (remaining 2038 messages suppressed)
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = 83426.9 +/- 273.553,NumSig = -12020 +/- 132.773,float_width = 0.293962 +/- 0.298623,mean = 2.28851 +/- 0.00189213,p1 = -0.175312 +/- 0.00963819,p2 = -0.0614473 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.00154972 +/- 0.00910772,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.75341e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=67174.4, NumSig=-12840.1, float_width=0.323683, mean=2.33437, p1=-0.359392, p2=-0.931366, p3=0.0209684, p4=0.99928, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooChebychev::back[ x=mass coefList=(p1,p2,p3,p4) ]
+     p.d.f value is less than zero (-0.363827), forcing value to zero @ x=mass=2.41522, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.178751), forcing value to zero @ x=mass=2.42505, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.238290), forcing value to zero @ x=mass=2.39194, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.394719), forcing value to zero @ x=mass=2.40549, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.285918), forcing value to zero @ x=mass=2.42048, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.162840), forcing value to zero @ x=mass=2.38822, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.364048), forcing value to zero @ x=mass=2.4152, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.386605), forcing value to zero @ x=mass=2.40377, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.399610), forcing value to zero @ x=mass=2.40844, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.383939), forcing value to zero @ x=mass=2.41288, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.336023), forcing value to zero @ x=mass=2.41748, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+     p.d.f value is less than zero (-0.002931), forcing value to zero @ x=mass=2.38167, coefList=(p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772)
+    ... (remaining 2038 messages suppressed)
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-0.001477), forcing value to zero @ !refCoefNorm=(mass = 2.41696), !pdfs=(signal = 0.00608478/1,back = -0.343178/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.41696), !pdfs=(signal = 0.00608478/1,back = -0.343178/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     p.d.f value is less than zero (-0.147380), forcing value to zero @ !refCoefNorm=(mass = 2.34764), !pdfs=(signal = 14.6033/1,back = 1.14471/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.34764), !pdfs=(signal = 14.6033/1,back = 1.14471/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     p.d.f value is less than zero (-0.073410), forcing value to zero @ !refCoefNorm=(mass = 2.38148), !pdfs=(signal = 0.32857/1,back = 0.00213816/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.38148), !pdfs=(signal = 0.32857/1,back = 0.00213816/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     p.d.f value is less than zero (-0.001747), forcing value to zero @ !refCoefNorm=(mass = 2.41578), !pdfs=(signal = 0.00719656/1,back = -0.35771/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.41578), !pdfs=(signal = 0.00719656/1,back = -0.35771/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     p.d.f value is less than zero (-3.968733), forcing value to zero @ !refCoefNorm=(mass = 2.34014), !pdfs=(signal = 33.6936/1,back = 1.41849/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.34014), !pdfs=(signal = 33.6936/1,back = 1.41849/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     p.d.f value is less than zero (-4.604596), forcing value to zero @ !refCoefNorm=(mass = 2.33859), !pdfs=(signal = 36.9953/1,back = 1.47428/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.33859), !pdfs=(signal = 36.9953/1,back = 1.47428/0.41873), !coefficients=(NumSig = -12840.1 +/- 132.773,NumBkg = 67174.4 +/- 273.553)
+    ... (remaining 2038 messages suppressed)
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = 67174.4 +/- 273.553,NumSig = -12840.1 +/- 132.773,float_width = 0.323683 +/- 0.298623,mean = 2.33437 +/- 0.00189213,p1 = -0.359392 +/- 0.00963819,p2 = -0.931366 +/- 0.0101393,p3 = 0.0209684 +/- 0.00838278,p4 = 0.99928 +/- 0.00910772,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    187 CALLS        1952 TOTAL
+                     EDM=0.000528638    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31498e+04   2.73553e+02  -2.74409e+02   2.74435e+02
+   2  NumSig       5.02736e+02   1.32773e+02  -1.26226e+02   1.44523e+02
+   3  float_width   2.35140e-01   2.98623e-01  -3.01846e-01   at limit   
+   4  mean         2.28565e+00   1.89213e-03  -1.87087e-03   1.97784e-03
+   5  p1          -1.63915e-01   9.63819e-03  -9.64400e-03   9.63174e-03
+   6  p2          -5.05277e-02   1.01393e-02  -1.01743e-02   1.01089e-02
+   7  p3           1.25856e-02   8.38278e-03  -8.40396e-03   8.36741e-03
+   8  p4           6.92539e-03   9.10772e-03                            
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+ **********
+ **   40 **MINOS        5500           8
+ **********
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.1084 added to diagonal of error matrix
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (1.75341e+06) to force MIGRAD to back out of this region. Error log follows
+Parameter values: NumBkg=101657, NumSig=-28454.7, float_width=0.387489, mean=2.28665, p1=-0.18742, p2=-0.0817796, p3=0.0432737, p4=-0.00218232, ratio=0.864574, width1=0.0066892, width2=0.0181433
+RooAddPdf::model[ NumSig * signal + NumBkg * back ]
+     p.d.f value is less than zero (-5.771934), forcing value to zero @ !refCoefNorm=(mass = 2.29583), !pdfs=(signal = 24.793/1,back = 1.0333/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29583), !pdfs=(signal = 24.793/1,back = 1.0333/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     p.d.f value is less than zero (-2.154515), forcing value to zero @ !refCoefNorm=(mass = 2.29969), !pdfs=(signal = 15.7214/1,back = 1.02545/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29969), !pdfs=(signal = 15.7214/1,back = 1.02545/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     p.d.f value is less than zero (-8.160507), forcing value to zero @ !refCoefNorm=(mass = 2.2801), !pdfs=(signal = 31.0446/1,back = 1.06435/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.2801), !pdfs=(signal = 31.0446/1,back = 1.06435/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     p.d.f value is less than zero (-8.124543), forcing value to zero @ !refCoefNorm=(mass = 2.29336), !pdfs=(signal = 30.6916/1,back = 1.03828/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29336), !pdfs=(signal = 30.6916/1,back = 1.03828/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     p.d.f value is less than zero (-7.945534), forcing value to zero @ !refCoefNorm=(mass = 2.29355), !pdfs=(signal = 30.2426/1,back = 1.03788/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.29355), !pdfs=(signal = 30.2426/1,back = 1.03788/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     p.d.f value is less than zero (-11.513645), forcing value to zero @ !refCoefNorm=(mass = 2.28721), !pdfs=(signal = 39.24/1,back = 1.05052/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+     getLogVal() top-level p.d.f evaluates to zero @ !refCoefNorm=(mass = 2.28721), !pdfs=(signal = 39.24/1,back = 1.05052/0.344845), !coefficients=(NumSig = -28454.7 +/- 132.773,NumBkg = 101657 +/- 273.553)
+    ... (remaining 2038 messages suppressed)
+RooNLLVar::nll_model_ds[ paramSet=(NumBkg,NumSig,float_width,mean,p1,p2,p3,p4,ratio,width1,width2) ]
+     function value is NAN @ paramSet=(NumBkg = 101657 +/- 273.553,NumSig = -28454.7 +/- 132.773,float_width = 0.387489 +/- 0.298623,mean = 2.28665 +/- 0.00189213,p1 = -0.18742 +/- 0.00963819,p2 = -0.0817796 +/- 0.0101393,p3 = 0.0432737 +/- 0.00838278,p4 = -0.00218232 +/- 0.00910772,ratio = 0.864574 +/- 0,width1 = 0.0066892 +/- 0,width2 = 0.0181433 +/- 0)
+
+ MIGRAD FAILS WITH STRATEGY=0.   WILL TRY WITH STRATEGY=1.
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.03182 added to diagonal of error matrix
+ FCN=-573331 FROM MINOS     STATUS=SUCCESSFUL    297 CALLS        2249 TOTAL
+                     EDM=0.000528638    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NumBkg       5.31498e+04   2.73553e+02  -2.74409e+02   2.74435e+02
+   2  NumSig       5.02736e+02   1.32773e+02  -1.26226e+02   1.44523e+02
+   3  float_width   2.35140e-01   2.98623e-01  -3.01846e-01   at limit   
+   4  mean         2.28565e+00   1.89213e-03  -1.87087e-03   1.97784e-03
+   5  p1          -1.63915e-01   9.63819e-03  -9.64400e-03   9.63174e-03
+   6  p2          -5.05277e-02   1.01393e-02  -1.01743e-02   1.01089e-02
+   7  p3           1.25856e-02   8.38278e-03  -8.40396e-03   8.36741e-03
+   8  p4           6.92539e-03   9.10772e-03  -9.12393e-03   9.12897e-03
+   9  ratio        8.64574e-01     fixed    
+  10  width1       6.68920e-03     fixed    
+  11  width2       1.81433e-02     fixed    
+                               ERR DEF= 0.5
+Info in <TMinuitMinimizer::GetMinosError>: Parameter ratio is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width1 is fixed. There are no Minos error to calculate. Ignored.
+Info in <TMinuitMinimizer::GetMinosError>: Parameter width2 is fixed. There are no Minos error to calculate. Ignored.
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+low: 126
+high: 145
+err: 9
+
+  RooFitResult: minimized FCN value: -573331, estimated distance to minimum: 0.000528638
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 MINOS=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                NumBkg    5.3150e+04 +/-  2.74e+02
+                NumSig    5.0274e+02 +/-  1.33e+02
+           float_width    2.3514e-01 +/-  2.99e-01
+                  mean    2.2857e+00 +/-  1.89e-03
+                    p1   -1.6391e-01 +/-  9.64e-03
+                    p2   -5.0528e-02 +/-  1.01e-02
+                    p3    1.2586e-02 +/-  8.38e-03
+                    p4    6.9254e-03 +/-  9.11e-03
+                 ratio    8.6457e-01 +/-  0.00e+00
+                width1    6.6892e-03 +/-  0.00e+00
+                width2    1.8143e-02 +/-  0.00e+00
+
+EDM = 0.000528638
+-log(L) at minimum-573331.44647066458128

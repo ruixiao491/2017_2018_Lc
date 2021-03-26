@@ -1,0 +1,26 @@
+export out_dir=/home/xiao147/private/2017_pp_Lc_speedup_version_2_toDtuple/CMSSW_9_4_10/src/Bfinder/Bfinder/Dntuple/analysis_firstturn_04072020/signal_fit_firstturn_02062020/ROOT/default_fit/3_4_binned_fit_scan_floatwidth
+
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.65 $out_dir/nt_3_4_0_65.root $out_dir/nt_3_4_0_65.pdf 12000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.6 $out_dir/nt_3_4_0_6.root $out_dir/nt_3_4_0_6.pdf 12000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.55 $out_dir/nt_3_4_0_55.root $out_dir/nt_3_4_0_55.pdf 12000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.5 $out_dir/nt_3_4_0_5.root $out_dir/nt_3_4_0_5.pdf 12000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.45 $out_dir/nt_3_4_0_45.root $out_dir/nt_3_4_0_45.pdf 12000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.4 $out_dir/nt_3_4_0_4.root $out_dir/nt_3_4_0_4.pdf 11000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.35 $out_dir/nt_3_4_0_35.root $out_dir/nt_3_4_0_35.pdf 11000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.3 $out_dir/nt_3_4_0_3.root $out_dir/nt_3_4_0_3.pdf 11000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.25 $out_dir/nt_3_4_0_25.root $out_dir/nt_3_4_0_25.pdf 11000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.2 $out_dir/nt_3_4_0_2.root $out_dir/nt_3_4_0_2.pdf 10000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.15 $out_dir/nt_3_4_0_15.root $out_dir/nt_3_4_0_15.pdf 10000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.1 $out_dir/nt_3_4_0_1.root $out_dir/nt_3_4_0_1.pdf 10000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.05 $out_dir/nt_3_4_0_05.root $out_dir/nt_3_4_0_05.pdf 9000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C 0.0 $out_dir/nt_3_4_0_0.root $out_dir/nt_3_4_0_0.pdf 9000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C -0.05 $out_dir/nt_3_4_minus_0_05.root $out_dir/nt_3_4_minus_0_05.pdf 9000&
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C -0.1 $out_dir/nt_3_4_minus0_1.root $out_dir/nt_3_4_minus_0_1.pdf 9000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C -0.15 $out_dir/nt_3_4_minus_0_15.root $out_dir/nt_3_4_minus_0_15.pdf 8600& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C -0.2 $out_dir/nt_3_4_minus_0_2.root $out_dir/nt_3_4_minus_0_2.pdf 8200& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C -0.25 $out_dir/nt_3_4_minus_0_25.root $out_dir/nt_3_4_minus_0_25.pdf 8000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C -0.3 $out_dir/nt_3_4_minus_0_3.root $out_dir/nt_3_4_minus_0_3.pdf 7500& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C -0.35 $out_dir/nt_3_4_minus_0_35.root $out_dir/nt_3_4_minus_0_35.pdf 7200& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C -0.4 $out_dir/nt_3_4_minus_0_4.root $out_dir/nt_3_4_minus_0_4.pdf 7000& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C -0.45 $out_dir/nt_3_4_minus_0_45.root $out_dir/nt_3_4_minus_0_45.pdf 6800& 
+run_3_4.sh unbinned_fit_test_modified_PbPb_trytomanytimes_3_4_alone_pol2_floatwidth_float_binned.C -0.5 $out_dir/nt_3_4_minus_0_5.root $out_dir/nt_3_4_minus_0_5.pdf 6600& 
