@@ -17,7 +17,6 @@ void unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2(){
 TFile * f = new TFile("/scratch/halstead/x/xiao147/2017_pp_fullproduction_03112020_2/fill_3_100_BDTG/working_points_scan_whole.root");
 
 //6-8
-TFile *f_fun = new TFile("/home/xiao147/private/newchannel_lambda_CtoproduceDntuple/CMSSW_7_5_8_patch3/src/Bfinder/Bfinder/Dntuple/TMVA_official_MC/signal_exaction/ROOT_signalextraction_witheventselection/signalectraction/forAN_plot/change_fit_function/pp/pol3/6_8_pp_officialTMVAcuts_2gaus_pol3_weighted_ptcuts_eventselection_changefit_L_changefit_function.root");
 TFile *f_fun_MC = new TFile("/scratch/halstead/x/xiao147/2017_pp_firstturn_dataproduction_0416_2019/signal_extraction/pp_3_100_BDTG/2gaus_1fit/pp_6_8_BDT4_100_MC_2gaus_fit_hits.root");
 
 auto *f3_MC = (TF1*) f_fun_MC->Get("f3");
