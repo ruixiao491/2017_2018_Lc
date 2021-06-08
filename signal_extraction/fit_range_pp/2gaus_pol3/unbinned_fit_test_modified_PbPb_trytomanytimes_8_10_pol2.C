@@ -17,13 +17,11 @@ TFile * f = new TFile("/scratch/halstead/x/xiao147/2017_pp_fullproduction_031120
 //8-10
 TFile *f_fun_MC = new TFile("/scratch/halstead/x/xiao147/2017_pp_firstturn_dataproduction_0416_2019/signal_extraction/pp_3_100_BDTG/2gaus_1fit/pp_8_10_BDT4_100_MC_2gaus_fit_hits.root");
 
-auto *f3 = (TF1*) f_fun->Get("f3");
 auto *f3_MC = (TF1*) f_fun_MC->Get("f3");
-TH1F *h1 = (TH1F*) f_fun->Get("h1");
 double w1 = f3_MC->GetParameter(2);
 double w2 = f3_MC->GetParameter(4);
 double r1 = f3_MC->GetParameter(3);
-double mean_value = f3->GetParameter(1);
+double mean_value = f3_MC->GetParameter(1);
 TH1F *h_output = new TH1F ("h_output","output",2,0,2);
 
 TNtuple *nt2 = (TNtuple*)f->Get("BDTG_8_10_value_0_77");

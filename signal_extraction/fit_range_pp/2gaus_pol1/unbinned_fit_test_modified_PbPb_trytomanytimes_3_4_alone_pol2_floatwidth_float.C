@@ -19,7 +19,6 @@ TFile * f = new TFile("/scratch/halstead/x/xiao147/2017_pp_fullproduction_031120
 TFile *f_fun =  new TFile("/home/xiao147/private/2017_pp_Lc_speedup_version_2_toDtuple/CMSSW_9_4_10/src/Bfinder/Bfinder/Dntuple/analysis_firstturn_04072020/signal_fit_firstturn_02062020/ROOT/MC_fit/2gaus_1fit/pp_3_4_BDT4_100_MC_2gaus_fit.root");
 
 TF1 *f3 = (TF1*) f_fun->Get("f3");
-TH1F *h1 = (TH1F*) f_fun->Get("h1");
 double w1 = f3->GetParameter(2);
 double w2 = f3->GetParameter(4);
 double r1 = f3->GetParameter(3);

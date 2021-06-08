@@ -20,9 +20,7 @@ TFile * f = new TFile("/scratch/halstead/x/xiao147/2017_pp_fullproduction_031120
 TFile *f_fun = new TFile("/scratch/halstead/x/xiao147/2017_pp_firstturn_dataproduction_0416_2019/signal_extraction/pp_3_100_BDTG/2gaus_1fit/pp_5_6_BDT4_100_MC_2gaus_fit_hits.root");
 
 
-auto *f3 = (TF1*) f_fun->Get("f3");
 auto *f3_MC = (TF1*) f_fun->Get("f3");
-auto *f4 = (TF1*) f_fun2->Get("f3");
 double w1 = f3_MC->GetParameter(2);
 double w2 = f3_MC->GetParameter(4);
 double r1 = f3_MC->GetParameter(3);
