@@ -1,0 +1,21 @@
+export output_dir=/scratch/halstead/x/xiao147/BDT_test/skimtree_formva/pp
+export input_dir=/scratch/halstead/x/xiao147/pp2015_correct_dls_agreedARC_0706/add_branches/firetrigger
+
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB3_whole.root_13.root $output_dir/pp_MB3_skim_MB3_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB4_whole.root_14.root $output_dir/pp_MB4_skim_MB4_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB5_whole.root_15.root $output_dir/pp_MB5_skim_MB5_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB6_whole.root_16.root $output_dir/pp_MB6_skim_MB6_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB7_whole.root_17.root $output_dir/pp_MB7_skim_MB7_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB8_whole.root_18.root $output_dir/pp_MB8_skim_MB8_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB9_whole.root_19.root $output_dir/pp_MB9_skim_MB9_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB11_whole.root_1.root $output_dir/pp_MB11_skim_MB11_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB12_whole.root_2.root $output_dir/pp_MB12_skim_MB12_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB13_whole.root_3.root $output_dir/pp_MB13_skim_MB13_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB14_whole.root_4.root $output_dir/pp_MB14_skim_MB14_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB15_whole.root_5.root $output_dir/pp_MB15_skim_MB15_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB16_whole.root_6.root $output_dir/pp_MB16_skim_MB16_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB17_whole.root_7.root $output_dir/pp_MB17_skim_MB17_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB18_whole.root_8.root $output_dir/pp_MB18_skim_MB18_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB19_whole.root_9.root $output_dir/pp_MB19_skim_MB19_whole.root&
+run_skim.sh skim_tree_formva.C $input_dir/Dntuple_MB20_whole.root_11.root $output_dir/pp_MB20_skim_MB20_whole.root&
+

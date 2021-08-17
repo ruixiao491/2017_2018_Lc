@@ -1,0 +1,19 @@
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/dls_gr_2_12052019/TMVAClassification_pp_5_20_BDT_5_cutvariables_0_1_2_3_5_weights/TMVAClassification_BDT.class.C"
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/PbPb_8_20_default_BDT_setting/TMVAClassification_PbPb_8_20_BDT_10_cutvariables_0to9_allvariables_weights/TMVAClassification_BDT.class.C"
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_PbPb_8_20_BDT_6_cutvariables_0_1_2_3_4_5_logdls_tree800_weights_ncut30/TMVAClassification_BDT.class.C"
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_pp_3_20_BDT_5_cutvariables_0_1_2_3_5_weights/TMVAClassification_BDT.class.C"
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_pp_3_4_BDT_5_cutvariables_0_1_2_3_5_weights/TMVAClassification_BDT.class.C"
+
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_PbPb_5_6_BDT_6_cutvariables_0_1_2_3_4_5_logdls_tree800_ncut30_weights/TMVAClassification_BDT.class.C"
+
+
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_pp_3_100_BDT_5_cutvariables_0_1_2_3_5_log_test_weights/TMVAClassification_BDT.class.C"//3-100 uniform cuts
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_pp_2_6_BDT_5_cutvariables_0_1_2_3_5_log_test_weights/TMVAClassification_BDT.class.C"
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_pp_2_3_BDT_5_cutvariables_0_1_2_3_5_log_test_weights/TMVAClassification_BDT.class.C"
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_pp_3_4_BDT_5_cutvariables_0_1_2_3_5_log_test_weights/TMVAClassification_BDT.class.C"
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_pp_3_6_BDT_5_cutvariables_0_1_2_3_5_log_test_weights/TMVAClassification_BDT.class.C"
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_pp_3_5_BDT_5_cutvariables_0_1_2_3_5_log_test_weights/TMVAClassification_BDT.class.C"
+//#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_pp_4_100_BDT_5_cutvariables_0_1_2_3_5_log_test_weights/TMVAClassification_BDT.class.C"
+
+
+#include  "/home/xiao147/private/TMVA_lambdaC/CMSSW_7_5_8_patch3/src/tmvaDntupleRunII_try_BDT_20172018/myTMVA/weights/TMVAClassification_pp_3_100_BDTG_5_cutvariables_0_1_2_3_5_log_test_weights/TMVAClassification_BDTG.class.C"

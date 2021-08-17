@@ -1,0 +1,18 @@
+export input_dir=/home/xiao147/private/2017_pp_Lc_speedup_version_2_toDtuple/CMSSW_9_4_10/src/Bfinder/Bfinder/Dntuple/analysis_firstturn_04072020/full_production_filelist/reproduce_fillBDTG_06132021/file_list
+export output_dir=/scratch/halstead/x/xiao147/2017_pp_fullproduction_03112020_2/fill_3_100_BDTG_witheventinfo
+
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias1/HIZeroBias1_0000.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias1/HIZeroBias1_0000 HIZero1_0000_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias1/HIZeroBias1_0001.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias1/HIZeroBias1_0001 HIZero1_0001_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias1/HIZeroBias1_0002.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias1/HIZeroBias1_0002 HIZero1_0002_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias10/HIZeroBias10_0000.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias10/HIZeroBias10_0000 HIZero10_0000_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias10/HIZeroBias10_0001.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias10/HIZeroBias10_0001 HIZero10_0001_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias12/HIZeroBias12_0000.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias12/HIZeroBias12_0000 HIZero12_0000_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias12/HIZeroBias12_0001.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias12/HIZeroBias12_0001 HIZero12_0001_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias2/HIZeroBias2_0000.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias2/HIZeroBias2_0000 HIZero2_0000_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias2/HIZeroBias2_0001.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias2/HIZeroBias2_0001 HIZero2_0001_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias2/HIZeroBias2_0002.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias2/HIZeroBias2_0002 HIZero2_0002_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias3/HIZeroBias3_0000.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias3/HIZeroBias3_0000 HIZero3_0000_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias3/HIZeroBias3_0001.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias3/HIZeroBias3_0001 HIZero3_0001_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias8/HIZeroBias8_0000.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias8/HIZeroBias8_0000 HIZero8_0000_Dntuple
+./submit_SLURM_mutltifies.sh $input_dir/pp2017data_forlambdapkpi/HIZeroBias8/HIZeroBias8_0001.txt 1 13 $output_dir/pp2017data_forlambdapkpi/HIZeroBias8/HIZeroBias8_0001 HIZero8_0001_Dntuple
+

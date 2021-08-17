@@ -1,0 +1,119 @@
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 BDT 10 "0,1,2,3,4,5,6,7,8,9" 0to9_allvariables & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 BDT 3 "0,1,2" 0_1_2 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 BDT 4 "0,1,2,3" 0_1_2_3 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 BDT 4 "0,1,2,4" 0_1_2_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 BDT 4 "0,1,2,5" 0_1_2_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 BDT 5 "0,1,2,3,4" 0_1_2_3_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 BDT 5 "0,1,2,3,5" 0_1_2_3_5_log_test & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 BDT 5 "0,1,2,4,5" 0_1_2_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 BDT 6 "0,1,2,3,4,5" 0_1_2_3_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 BDT 5 "1,2,3,4,5" 1_2_3_4_5 &
+
+
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 5 20 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5 &
+
+##>2
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 100 BDT 5 "0,1,2,3,5" 0_1_2_3_5_log_test & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 100 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5_log_test &
+
+##>2-6
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 6 BDT 5 "0,1,2,3,5" 0_1_2_3_5_log_test & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 6 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5_log_test &
+
+##3-6
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 6 BDT 5 "0,1,2,3,5" 0_1_2_3_5_log_test & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 5 "0,1,2,3,5" 0_1_2_3_5_log_test & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 5 "0,1,2,3,5" 0_1_2_3_5_log_test & 
+
+##3-5
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 5 BDT 5 "0,1,2,3,5" 0_1_2_3_5_log_test & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 100 BDTG 5 "0,1,2,3,5" 0_1_2_3_5_log_test & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 100 BDTG 5 "0,1,2,3,5" 0_1_2_3_5_log_test & 
+####10-12.5
+run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 12.5 15 CutsSA 6 "0,1,2,3,4,5" 0_1_2_3_4_5_log
+
+
+##>20
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 20 100 BDT 5 "0,1,2,3,5" 0_1_2_3_5_log_test &
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 20 100 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5_log_test &
+
+
+##3-20
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 20 BDT 5 "0,1,2,3,5" 0_1_2_3_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 20 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5 &
+
+##3-4
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 5 "0,1,2,3,5" 0_1_2_3_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5 &
+
+
+#<5
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 BDT 10 "0,1,2,3,4,5,6,7,8,9" 0to9_allvariables & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 BDT 3 "0,1,2" 0_1_2 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 BDT 4 "0,1,2,3" 0_1_2_3 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 BDT 4 "0,1,2,4" 0_1_2_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 BDT 4 "0,1,2,5" 0_1_2_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 BDT 5 "0,1,2,3,4" 0_1_2_3_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 BDT 5 "0,1,2,3,5" 0_1_2_3_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 BDT 5 "0,1,2,4,5" 0_1_2_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 BDT 6 "0,1,2,3,4,5" 0_1_2_3_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 BDT 5 "1,2,3,4,5" 1_2_3_4_5 &
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 20 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5 &
+
+
+
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 10 "0,1,2,3,4,5,6,7,8,9" 0to9_allvariables & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 3 "0,1,2" 0_1_2 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 4 "0,1,2,3" 0_1_2_3 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 4 "0,1,2,4" 0_1_2_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 4 "0,1,2,5" 0_1_2_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 5 "0,1,2,3,4" 0_1_2_3_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 5 "0,1,2,3,5" 0_1_2_3_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 5 "0,1,2,4,5" 0_1_2_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 6 "0,1,2,3,4,5" 0_1_2_3_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 5 "1,2,3,4,5" 1_2_3_4_5 &
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5 &
+
+
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 10 "0,1,2,3,4,5,6,7,8,9" 0to9_allvariables & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 3 "0,1,2" 0_1_2 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 4 "0,1,2,3" 0_1_2_3 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 4 "0,1,2,4" 0_1_2_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 4 "0,1,2,5" 0_1_2_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 5 "0,1,2,3,4" 0_1_2_3_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 5 "0,1,2,3,5" 0_1_2_3_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 5 "0,1,2,4,5" 0_1_2_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 6 "0,1,2,3,4,5" 0_1_2_3_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 5 "1,2,3,4,5" 1_2_3_4_5 &
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5 &
+
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 10 "0,1,2,3,4,5,6,7,8,9" 0to9_allvariables & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 3 "0,1,2" 0_1_2 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 4 "0,1,2,3" 0_1_2_3 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 4 "0,1,2,4" 0_1_2_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 4 "0,1,2,5" 0_1_2_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 5 "0,1,2,3,4" 0_1_2_3_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 5 "0,1,2,3,5" 0_1_2_3_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 5 "0,1,2,4,5" 0_1_2_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 6 "0,1,2,3,4,5" 0_1_2_3_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 5 "1,2,3,4,5" 1_2_3_4_5 &
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5 &
+
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 10 "0,1,2,3,4,5,6,7,8,9" 0to9_allvariables & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 3 "0,1,2" 0_1_2 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 4 "0,1,2,3" 0_1_2_3 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 4 "0,1,2,4" 0_1_2_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 4 "0,1,2,5" 0_1_2_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 5 "0,1,2,3,4" 0_1_2_3_4 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 5 "0,1,2,3,5" 0_1_2_3_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 5 "0,1,2,4,5" 0_1_2_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 6 "0,1,2,3,4,5" 0_1_2_3_4_5 & 
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 5 "1,2,3,4,5" 1_2_3_4_5 &
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 CutsSA 5 "0,1,2,3,5" 0_1_2_3_5 &
+
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 5 BDT 5 "0,1,2,3,5" 0_1_2_3_5 &
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 4 5 BDT 5 "0,1,2,3,5" 0_1_2_3_5 &
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 4 BDT 5 "0,1,2,3,5" 0_1_2_3_5 &
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 2 3 BDT 5 "0,1,2,3,5" 0_1_2_3_5 &
+#run_TMVA.sh TMVAClassification_trigger_BS_pp_combine6_20.C pp 3 5 BDT 5 "0,1,2,3,5" 0_1_2_3_5 &
+

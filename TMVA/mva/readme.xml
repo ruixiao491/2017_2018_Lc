@@ -1,0 +1,2 @@
+g++ classmaker.C $(root-config --cflags --libs) -g -o classmaker.exe
+./classmaker.exe "../myTMVA/weights/${TEND}.class.C"
