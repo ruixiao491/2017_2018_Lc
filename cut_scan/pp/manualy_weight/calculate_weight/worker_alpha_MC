@@ -1,0 +1,10 @@
+export output_dur=/home/xiao147/private/2017_pp_Lc_speedup_version_2_toDtuple/CMSSW_9_4_10/src/Bfinder/Bfinder/Dntuple/analysis_firstturn_04072020/cut_scan/manualy_weight/ROOT/MC_distribution/MC_fit
+
+#run_MC_dls.sh fit_MC_alpha.C h_alpha_4_5 $output_dur/h_alpha_4_5.root $output_dur/h_alpha_4_5.pdf 
+#run_MC_dls.sh fit_MC_alpha.C h_alpha_5_6 $output_dur/h_alpha_5_6.root $output_dur/h_alpha_5_6.pdf 
+#run_MC_dls.sh fit_MC_alpha.C h_alpha_6_8 $output_dur/h_alpha_6_8.root $output_dur/h_alpha_6_8.pdf 
+#run_MC_dls.sh fit_MC_alpha.C h_alpha_8_10 $output_dur/h_alpha_8_10.root $output_dur/h_alpha_8_10.pdf 
+#run_MC_dls.sh fit_MC_alpha.C h_alpha_10_125 $output_dur/h_alpha_10_125.root $output_dur/h_alpha_10_125.pdf 
+#run_MC_dls.sh fit_MC_alpha.C h_alpha_125_15 $output_dur/h_alpha_125_15.root $output_dur/h_alpha_125_15.pdf 
+#run_MC_dls.sh fit_MC_alpha.C h_alpha_15_20 $output_dur/h_alpha_15_20.root $output_dur/h_alpha_15_20.pdf 
+run_MC_dls.sh fit_MC_alpha.C h_alpha_10_20 $output_dur/h_alpha_10_20.root $output_dur/h_alpha_10_20_reweight_once.pdf

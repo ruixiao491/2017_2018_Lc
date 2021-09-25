@@ -1,0 +1,30 @@
+export output_dir=/home/xiao147/private/2017_pp_Lc_speedup_version_2_toDtuple/CMSSW_9_4_10/src/Bfinder/Bfinder/Dntuple/analysis_firstturn_04072020/cut_scan/manualy_weight/ROOT/scan_cut_fit/6_8_bins
+
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_dlscan_0_1 $output_dir/pT_6_8_dlscan_0_1.root $output_dir/pT_6_8_dlscan_0_1.pdf 280000 350000&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_dlscan_1_2 $output_dir/pT_6_8_dlscan_1_2.root $output_dir/pT_6_8_dlscan_1_2.pdf 56000 71000&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_dlscan_2_3 $output_dir/pT_6_8_dlscan_2_3.root $output_dir/pT_6_8_dlscan_2_3.pdf 26000 34000&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_dlscan_3_4 $output_dir/pT_6_8_dlscan_3_4.root $output_dir/pT_6_8_dlscan_3_4.pdf 13000 16500&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_dlscan_4_5 $output_dir/pT_6_8_dlscan_4_5.root $output_dir/pT_6_8_dlscan_4_5.pdf 7300 8900&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_dlscan_5_6 $output_dir/pT_6_8_dlscan_5_6.root $output_dir/pT_6_8_dlscan_5_6.pdf 4600 6000&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_dlscan_6_7 $output_dir/pT_6_8_dlscan_6_7.root $output_dir/pT_6_8_dlscan_6_7.pdf 6000 7500&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_dlscan_7_8 $output_dir/pT_6_8_dlscan_7_8.root $output_dir/pT_6_8_dlscan_7_8.pdf 3800 4700&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_dlscan_8_9 $output_dir/pT_6_8_dlscan_8_9.root $output_dir/pT_6_8_dlscan_8_9.pdf 3700 4700&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_dlscan_9_10 $output_dir/pT_6_8_dlscan_9_10.root $output_dir/pT_6_8_dlscan_9_10.pdf 1800 2350&
+#chi2
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_chiscan_0_1 $output_dir/pT_6_8_chiscan_0_1.root $output_dir/pT_6_8_chiscan_0_1.pdf 5800 7300&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_chiscan_1_2 $output_dir/pT_6_8_chiscan_1_2.root $output_dir/pT_6_8_chiscan_1_2.pdf 7200 8800&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_chiscan_2_3 $output_dir/pT_6_8_chiscan_2_3.root $output_dir/pT_6_8_chiscan_2_3.pdf 5800 7400&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_chiscan_3_4 $output_dir/pT_6_8_chiscan_3_4.root $output_dir/pT_6_8_chiscan_3_4.pdf 2600 3400&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_chiscan_4_5 $output_dir/pT_6_8_chiscan_4_5.root $output_dir/pT_6_8_chiscan_4_5.pdf 4800 6200&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_chiscan_5_6 $output_dir/pT_6_8_chiscan_5_6.root $output_dir/pT_6_8_chiscan_5_6.pdf 4700 5800&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_chiscan_6_7 $output_dir/pT_6_8_chiscan_6_7.root $output_dir/pT_6_8_chiscan_6_7.pdf 2100 2800&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_chiscan_7_8 $output_dir/pT_6_8_chiscan_7_8.root $output_dir/pT_6_8_chiscan_7_8.pdf 6400 8100&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_chiscan_8_9 $output_dir/pT_6_8_chiscan_8_9.root $output_dir/pT_6_8_chiscan_8_9.pdf 4000 5200&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_chiscan_9_10 $output_dir/pT_6_8_chiscan_9_10.root $output_dir/pT_6_8_chiscan_9_10.pdf 3900 5100&
+#alpha
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_alphascan_0_1 $output_dir/pT_6_8_alphascan_0_1.root $output_dir/pT_6_8_alphascan_0_1.pdf 10000 13200&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_alphascan_1_2 $output_dir/pT_6_8_alphascan_1_2.root $output_dir/pT_6_8_alphascan_1_2.pdf 15500 20000&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_alphascan_2_3 $output_dir/pT_6_8_alphascan_2_3.root $output_dir/pT_6_8_alphascan_2_3.pdf 5000 6900&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_alphascan_3_4 $output_dir/pT_6_8_alphascan_3_4.root $output_dir/pT_6_8_alphascan_3_4.pdf 3700 5400&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_alphascan_4_5 $output_dir/pT_6_8_alphascan_4_5.root $output_dir/pT_6_8_alphascan_4_5.pdf 4500 7500&
+run_5_20.sh unbinned_fit_test_modified_PbPb_trytomanytimes_6_8_pol2.C pT_6_8_alphascan_5_6 $output_dir/pT_6_8_alphascan_5_6.root $output_dir/pT_6_8_alphascan_5_6.pdf 1400 2500&
