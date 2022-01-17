@@ -1,0 +1,2 @@
+ALL_PACKAGES += test/crab_projects
+subdirs_src_test_crab_projects := src_test_crab_projects_crab_non_prompt_Lc_crosssection_0404202021_y7_Bhadronweight_wholepT

@@ -1,0 +1,7 @@
+<tool name="cuda-cublas" version="9.0.176-fmblme2">
+  <info url="https://docs.nvidia.com/cuda/cublas/index.html"/>
+  <use name="cuda"/>
+  <lib name="cublas"/>
+  <lib name="cublas_device"/>
+  <flags CUDA_LDFLAGS="-lcublas_device"/>
+</tool>

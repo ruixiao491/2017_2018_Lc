@@ -1,0 +1,8 @@
+<tool name="vdt" version="0.3.9">
+  <lib name="vdt"/>
+  <use name="vdt_headers"/>
+  <client>
+    <environment name="VDT_BASE" default="/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/vdt/0.3.9"/>
+    <environment name="LIBDIR" default="$VDT_BASE/lib"/>
+  </client>
+</tool>

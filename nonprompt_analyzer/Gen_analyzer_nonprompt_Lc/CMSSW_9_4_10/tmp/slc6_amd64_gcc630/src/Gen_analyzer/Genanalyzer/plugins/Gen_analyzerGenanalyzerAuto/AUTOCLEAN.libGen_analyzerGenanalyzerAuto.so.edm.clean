@@ -1,0 +1,2 @@
+01:/bin/rm -f lib/slc6_amd64_gcc630/pluginGen_analyzerGenanalyzerAuto.so lib/slc6_amd64_gcc630/Gen_analyzerGenanalyzerAuto.edmplugin
+90:edmPluginRefresh lib/slc6_amd64_gcc630
